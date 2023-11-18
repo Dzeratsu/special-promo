@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-black;
+    font-family: MyriadPro, sans-serif;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .h-auto {
+    height: auto;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .header-padding .header {
+      padding-right: 17px;
+    }
+  }
+
+  .h-0 {
+    height: 0;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: inherit !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  @font-face {
+    font-family: 'MyriadPro';
+    src: url('static/fonts/MyriadPro-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MyriadPro';
+    src: url('static/fonts/MyriadPro-Semibold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MyriadPro';
+    src: url('static/fonts/MyriadPro-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MyriadPro';
+    src: url('~static/fonts/MyriadPro-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+  }
+  a:hover {
+    underline:none;
+  }
+
+}
