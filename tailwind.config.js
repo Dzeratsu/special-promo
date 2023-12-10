@@ -12,7 +12,8 @@ module.exports = {
       black: "#1D1D1B",
       red: "#BD1622",
       white: "#FFFFFF",
-      gray: "#ECECEC"
+      gray: "#ECECEC",
+      "bg-gray": "#F8F8F8"
     },
     fontSize: {
       xs: ['.8125rem', '1.1375rem'], // 13px
@@ -73,6 +74,9 @@ module.exports = {
         'show-layout': 'show-layout 2s ease-in-out forwards',
         rotate360: 'rotate360 1s infinite',
       },
+      boxShadow: {
+        'review-shadow':'0px 0px 15px 0px #0000001A'
+}
     },
   },
   plugins: [],

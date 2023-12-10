@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="mx-auto px-6">
-      <h2 class="font-bold text-3xl sm:text-6xl text-center">РАЗРАБОТАН <span class="max-sm:block">СПЕЦИАЛЬНО</span>
-        <span class="sm:block">для совместного применения с красками и лаками</span></h2>
+      <h2 class="font-bold text-[21px] sm:text-6xl text-center">РАЗРАБОТАН <span class="max-sm:block">СПЕЦИАЛЬНО</span>
+        <span class="sm:block">для применения с красками и лаками</span></h2>
       <div>
         <div class="flex flex-col sm:flex-row items-center mt-5 sm:justify-center  sm:gap-[57px]">
           <nuxt-img
@@ -30,6 +30,7 @@
           <span class="bg-gray pt-[8px] pl-[7px] pb-[7px] pr-[8px] sm:pt-[11px] sm:pl-[9px] sm:pb-[9px] sm:pm run devpr-[1px] w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] block rounded-[5px] flex-shrink-0">
             <nuxt-img format="webp"
                       quality="100"
+                      alt="approve"
                       src="img/approve.svg"
                       width="19"
                       height="19"/>
