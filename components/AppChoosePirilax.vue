@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="mx-auto px-6">
-      <h2 class="font-bold text-3xl sm:text-6xl text-center">ВЫБИРАЙТЕ PIRILAX-SPECIAL</h2>
+      <app-title>ВЫБИРАЙТЕ PIRILAX-SPECIAL</app-title>
     </div>
     <div class="mx-auto md:pl-[170px] px-6">
     <ApproveImage class="mt-[31px]">Если планируете обработку дома защитно-декоративным составом</ApproveImage>
@@ -12,9 +12,10 @@
 
 <script>
 import ApproveImage from '@/components/global/ApproveImage.vue';
+import AppTitle from '@/components/global/AppTitle.vue';
 
 export default {
   name: "ChoosePage",
-  components: {ApproveImage}
+  components: {AppTitle, ApproveImage}
 }
 </script>

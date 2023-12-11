@@ -58,6 +58,7 @@ module.exports = {
       // => @media (min-width: 1630px) { ... }
     },
     backgroundImage: {
+      lineTitle: '/static/img/line.svg'
     },
     extend: {
       keyframes: {

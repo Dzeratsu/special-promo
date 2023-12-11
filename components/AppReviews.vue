@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="mx-auto px-6">
-      <h2 class="font-bold text-3xl sm:text-6xl text-center">ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h2>
+      <app-title>ОТЗЫВЫ ПОКУПАТЕЛЕЙ </app-title>
     <article class="mt-[25px] sm:mt-[61px]">
       <div class="rounded-[10px] shadow-review-shadow px-2 py-4 flex items-center justify-center">
       <nuxt-img
@@ -66,4 +66,5 @@
   </section>
 </template>
 <script setup>
+import AppTitle from '@/components/global/AppTitle.vue';
 </script>
