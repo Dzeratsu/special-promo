@@ -4,20 +4,23 @@
       src="/img/line.svg"
       alt="title-line"
       format="webp"
-      class="hidden md:block w-full"
+      class="hidden w-full md:block"
     />
-  <h2 class="font-bold text-[21px] sm:text-6xl text-center before:bg-lineTitle before:w-full flex-shrink-0"><slot/>
-  </h2>
+    <h2
+      class="flex-shrink-0 text-center text-[21px] font-bold before:w-full before:bg-lineTitle sm:text-6xl"
+    >
+      <slot />
+    </h2>
     <nuxt-img
       src="/img/line.svg"
       alt="title-line"
       format="webp"
-      class="hidden md:block w-full"
+      class="hidden w-full md:block"
     />
-</div>
+  </div>
 </template>
 <script>
 export default {
-  name: "AppTitle"
+  name: 'AppTitle',
 }
 </script>

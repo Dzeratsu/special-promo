@@ -30,7 +30,7 @@ export default {
         as: 'font',
         crossorigin: 'anonymous',
       },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
     title: 'promoSpecial',
     htmlAttrs: {
@@ -79,5 +79,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  image: {}
+  image: {},
 }

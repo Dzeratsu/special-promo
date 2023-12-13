@@ -1,57 +1,93 @@
 <template>
   <section>
     <div class="mx-auto px-6">
-      <h2 class="font-bold text-[21px] sm:text-6xl text-center">СОЧЕТАЙТЕ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ</h2>
+      <h2 class="text-center text-[21px] font-bold sm:text-6xl">
+        СОЧЕТАЙТЕ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ
+      </h2>
       <app-title class="mt-4">СОСТАВОВ PIRILAX</app-title>
-      <div class="mx-auto px-6 mt-5">
-      <article v-for="data in dataObject" v-bind:key="data">
-        <div class="flex items-center gap-5">
-       <nuxt-img :src="`img/${data.img}`"/>
-        <div>
-          <p>{{data?.title}}</p>
-          <p>{{data?.description}}</p>
-        </div>
-        </div>
-      </article>
+      <div class="mx-auto mt-5 lg:px-6">
+        <article
+          v-for="data in dataObject"
+          :key="data"
+          class="mx-auto px-6 md:pl-[120px]"
+        >
+          <div class="mt-6 flex items-start gap-5 lg:mt-5 lg:items-center">
+            <nuxt-img
+              format="webx"
+              quality="100"
+              :src="`img/${data.img}`"
+              width="70"
+              height="70"
+              class="hidden lg:block"
+            />
+            <nuxt-img
+              format="webx"
+              quality="100"
+              :src="`img/${data.imgMob}`"
+              width="47"
+              height="47"
+              class="mt-1 lg:hidden"
+            />
+            <div>
+              <p class="text-base font-bold lg:text-2xl">{{ data?.title }}</p>
+              <p class="text-base">{{ data?.description }}</p>
+            </div>
+          </div>
+        </article>
+        <article class="mx-auto mt-[41px] lg:mt-[80px]">
+          <iframe
+            class="h-[200px] md:h-[631px]"
+            width="100%"
+            height="631"
+            src="https://www.youtube.com/embed/DGeixKJ-DcM?si=8Bfq9aWkK6Q5shcK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
       </div>
     </div>
   </section>
 </template>
 <script>
-import AppTitle from '@/components/global/AppTitle.vue';
+import AppTitle from '@/components/global/AppTitle.vue'
 
 export default {
   name: 'AppCombine',
-  components: {AppTitle},
+  components: { AppTitle },
   data() {
     return {
       dataObject: [
         {
           title: 'Обеспечивает высокие показатели огнезащиты',
-          description: 'Препятствует распространению пламени, I и II группа огнезащитной эффективности',
-          img: "combine1.svg",
-          imgMob: "combine1-mob.svg"
+          description:
+            'Препятствует распространению пламени, I и II группа огнезащитной эффективности',
+          img: 'combine1.svg',
+          imgMob: 'combine1-mob.svg',
         },
         {
-          title: 'Защищает от плесневых и деревоокрашивающих грибов и водорослей',
+          title:
+            'Защищает от плесневых и деревоокрашивающих грибов и водорослей',
           description: 'Высокоэффективный антисептик по ГОСТ 30028.4',
-          img: "combine2.svg",
-          imgMob: "combine2-mob.svg"
+          img: 'combine2.svg',
+          imgMob: 'combine2-mob.svg',
         },
         {
           title: 'Экономичен, так как служит долго',
-          description: 'До 16 лет сохраняет свойства огнезащиты и антисептирования',
-          img: "combine3.svg",
-          imgMob: "combine3-mob.svg"
+          description:
+            'До 16 лет сохраняет свойства огнезащиты и антисептирования',
+          img: 'combine3.svg',
+          imgMob: 'combine3-mob.svg',
         },
         {
           title: 'Обработанные поверхности безопасны для людей и животных',
           description: '',
-          img: "combine4.svg",
-          imgMob: "combine4-mob.svg"
-        }
-      ]
+          img: 'combine4.svg',
+          imgMob: 'combine4-mob.svg',
+        },
+      ],
     }
-  }
+  },
 }
 </script>

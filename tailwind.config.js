@@ -9,11 +9,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      black: "#1D1D1B",
-      red: "#BD1622",
-      white: "#FFFFFF",
-      gray: "#ECECEC",
-      "bg-gray": "#F8F8F8"
+      black: '#1D1D1B',
+      red: '#BD1622',
+      white: '#FFFFFF',
+      gray: '#ECECEC',
+      'bg-gray': '#F8F8F8',
     },
     fontSize: {
       xs: ['.8125rem', '1.1375rem'], // 13px
@@ -58,7 +58,7 @@ module.exports = {
       // => @media (min-width: 1630px) { ... }
     },
     backgroundImage: {
-      lineTitle: '/static/img/line.svg'
+      lineTitle: '/static/img/line.svg',
     },
     extend: {
       keyframes: {
@@ -76,8 +76,8 @@ module.exports = {
         rotate360: 'rotate360 1s infinite',
       },
       boxShadow: {
-        'review-shadow':'0px 0px 15px 0px #0000001A'
-}
+        'review-shadow': '0px 0px 15px 0px #0000001A',
+      },
     },
   },
   plugins: [],
