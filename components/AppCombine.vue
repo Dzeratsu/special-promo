@@ -8,7 +8,7 @@
       <div class="mx-auto mt-5 lg:px-6">
         <article
           v-for="data in dataObject"
-          :key="data"
+          :key="data.img"
           class="mx-auto px-6 md:pl-[120px]"
         >
           <div class="mt-6 flex items-start gap-5 lg:mt-5 lg:items-center">
@@ -34,18 +34,19 @@
             </div>
           </div>
         </article>
-        <article class="mx-auto mt-[41px] lg:mt-[80px]">
-          <iframe
-            class="h-[200px] md:h-[631px]"
-            width="100%"
-            height="631"
-            src="https://www.youtube.com/embed/DGeixKJ-DcM?si=8Bfq9aWkK6Q5shcK"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </article>
+        <client-only>
+          <article class="mx-auto mt-[41px] lg:mt-[80px]">
+            <iframe
+              class="h-[200px] md:h-[631px]"
+              width="100%"
+              height="631"
+              src="https://www.youtube.com/embed/DGeixKJ-DcM?si=8Bfq9aWkK6Q5shcK"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+        </client-only>
       </div>
     </div>
   </section>
