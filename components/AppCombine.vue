@@ -2,27 +2,22 @@
   <section>
     <div class="mx-auto px-6">
       <h2 class="text-center text-[21px] font-bold sm:text-6xl">
-        СОЧЕТАЙТЕ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ
+        СОЧЕТАЙТЕ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ СОСТАВОВ PIRILAX
       </h2>
-      <app-title class="mt-4">СОСТАВОВ PIRILAX</app-title>
-      <div class="mx-auto mt-5 lg:px-6">
+      <div class="mx-auto mt-5 max-sm:px-0 max-sm:leading-4 lg:px-6">
         <article
           v-for="data in dataObject"
           :key="data.img"
-          class="mx-auto px-6 md:pl-[120px]"
+          class="mx-auto sm:px-6 md:pl-[120px]"
         >
           <div class="mt-6 flex items-start gap-5 lg:mt-5 lg:items-center">
-            <nuxt-img
-              format="webx"
-              quality="100"
+            <img
               :src="`img/${data.img}`"
               width="70"
               height="70"
               class="hidden lg:block"
             />
-            <nuxt-img
-              format="webx"
-              quality="100"
+            <img
               :src="`img/${data.imgMob}`"
               width="47"
               height="47"
@@ -52,11 +47,8 @@
   </section>
 </template>
 <script>
-import AppTitle from '@/components/global/AppTitle.vue'
-
 export default {
   name: 'AppCombine',
-  components: { AppTitle },
   data() {
     return {
       dataObject: [

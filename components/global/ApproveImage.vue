@@ -5,16 +5,9 @@
     <span
       class="block h-[30px] w-[30px] flex-shrink-0 rounded-[5px] bg-gray pb-[7px] pl-[7px] pr-[8px] pt-[8px] sm:h-[40px] sm:w-[40px] sm:pb-[9px] sm:pl-[9px] sm:pr-[1px] sm:pt-[11px]"
     >
-      <nuxt-img
-        format="webp"
-        quality="100"
-        alt="approve"
-        src="img/approve.svg"
-        width="19"
-        height="19"
-      />
+      <img alt="approve" src="img/approve.svg" width="19" height="19" />
     </span>
-    <p class="text-[21px]"><slot /></p>
+    <p class="text-[21px] max-sm:text-[16px]"><slot /></p>
   </div>
 </template>
 

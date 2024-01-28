@@ -2,9 +2,8 @@
   <div>
     <div class="mx-auto px-6">
       <h2 class="text-center text-[21px] font-bold sm:text-6xl">
-        С Pirilax-Special совместить огнезащиту и
+        С Pirilax-Special совместить огнезащиту и <br />декор стало возможным!
       </h2>
-      <app-title class="mt-4">декор стало возможным!</app-title>
     </div>
     <ul
       class="mx-auto mt-[50px] flex flex-wrap justify-center gap-x-7 gap-y-[45px] max-sm:hidden"
@@ -14,13 +13,7 @@
         :key="item.imgSrc"
         class="flex flex-col items-center"
       >
-        <nuxt-img
-          fornat="webp"
-          quality="100"
-          :src="item.imgSrc"
-          width="370"
-          height="255"
-        />
+        <img :src="item.imgSrc" width="370" height="255" />
         <span class="mt-[14px] text-center" v-html="item.text"></span>
       </li>
     </ul>
@@ -28,13 +21,8 @@
 </template>
 
 <script>
-import AppTitle from '@/components/global/AppTitle.vue'
-
 export default {
   name: 'AppSlider',
-  components: {
-    AppTitle,
-  },
   data() {
     return {
       slide: [

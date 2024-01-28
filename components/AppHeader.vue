@@ -4,9 +4,7 @@
   >
     <div class="mx-auto lg:w-[1170px]">
       <div class="my-2 flex items-center justify-between">
-        <nuxt-img
-          format="webp"
-          quality="100"
+        <img
           width="145"
           height="68"
           src="img/logo.png"
@@ -14,9 +12,7 @@
           class="hidden cursor-pointer lg:block"
           @click="closeMenu"
         />
-        <nuxt-img
-          format="webp"
-          quality="100"
+        <img
           width="76"
           height="35"
           src="img/logo-mob.png"

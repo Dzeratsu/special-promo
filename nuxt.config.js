@@ -1,4 +1,8 @@
 export default {
+  generate: {
+    dir: 'https://nort-udm.ru/special/',
+    fallback: '404.html',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     link: [

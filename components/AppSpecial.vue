@@ -9,18 +9,14 @@
         <div
           class="mt-5 flex flex-col items-center sm:flex-row sm:justify-center sm:gap-[57px]"
         >
-          <nuxt-img
-            format="webp"
-            quality="100"
+          <img
             class="hidden sm:block"
             src="img/special.svg"
             alt="pirilax-special"
             width="414"
             height="373"
           />
-          <nuxt-img
-            format="webp"
-            quality="100"
+          <img
             src="img/special_mob.svg"
             alt="pirilax-special-mob"
             width="176"
