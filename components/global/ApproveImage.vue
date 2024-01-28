@@ -3,7 +3,7 @@
     class="flex items-center gap-4 pt-5 text-base font-semibold leading-[16px] sm:text-[21px] sm:leading-[21px]"
   >
     <span
-      class="sm:pm run devpr-[1px] block h-[30px] w-[30px] flex-shrink-0 rounded-[5px] bg-gray pb-[7px] pl-[7px] pr-[8px] pt-[8px] sm:h-[40px] sm:w-[40px] sm:pb-[9px] sm:pl-[9px] sm:pt-[11px]"
+      class="block h-[30px] w-[30px] flex-shrink-0 rounded-[5px] bg-gray pb-[7px] pl-[7px] pr-[8px] pt-[8px] sm:h-[40px] sm:w-[40px] sm:pb-[9px] sm:pl-[9px] sm:pr-[1px] sm:pt-[11px]"
     >
       <nuxt-img
         format="webp"
@@ -14,7 +14,7 @@
         height="19"
       />
     </span>
-    <p><slot /></p>
+    <p class="text-[21px]"><slot /></p>
   </div>
 </template>
 

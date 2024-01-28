@@ -7,6 +7,7 @@
       <AppSlider class="mt-[48px]" />
       <AppCombine class="mt-[48px]" />
       <AppChoosePirilax class="mt-[48px]" />
+      <AppReady class="mt-[48px]" />
       <AppReviews class="mt-[48px]" />
     </div>
   </main>

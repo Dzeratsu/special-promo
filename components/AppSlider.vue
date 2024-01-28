@@ -6,10 +6,22 @@
       </h2>
       <app-title class="mt-4">декор стало возможным!</app-title>
     </div>
-    <ul class="flex items-center flex-wrap gap-x-7 mt-[50px]">
-      <li v-for="item in slide" :key="item.imgSrc" class="flex flex-col items-center">
-        <nuxt-img fornat="webp" quality="100" :src="item.imgSrc"  width="370" height="255"/>
-        <span :v-html="item.text"></span>
+    <ul
+      class="mx-auto mt-[50px] flex flex-wrap justify-center gap-x-7 gap-y-[45px] max-sm:hidden"
+    >
+      <li
+        v-for="item in slide"
+        :key="item.imgSrc"
+        class="flex flex-col items-center"
+      >
+        <nuxt-img
+          fornat="webp"
+          quality="100"
+          :src="item.imgSrc"
+          width="370"
+          height="255"
+        />
+        <span class="mt-[14px] text-center" v-html="item.text"></span>
       </li>
     </ul>
   </div>
@@ -21,24 +33,24 @@ import AppTitle from '@/components/global/AppTitle.vue'
 export default {
   name: 'AppSlider',
   components: {
-    AppTitle
+    AppTitle,
   },
   data() {
     return {
       slide: [
-        { imgSrc: 'img/slide/slide1.png', text: '<p>Фасады, подшивы</p>' },
+        { imgSrc: 'img/slide/slide1.png', text: `<p>Фасады, подшивы</p>` },
         { imgSrc: 'img/slide/slide2.png', text: '<p>Надворные постройки</p>' },
         { imgSrc: 'img/slide/slide3.png', text: '<p>Террасы, двери, окна</p>' },
         { imgSrc: 'img/slide/slide4.png', text: '<p>Потолки, стены</p>' },
         {
           imgSrc: 'img/slide/slide5.png',
-          text: '<p>Элементы декоративной отделки, предметов интерьера</p>'
+          text: '<p>Элементы декоративной отделки,<br> предметов интерьера</p>',
         },
         {
           imgSrc: 'img/slide/slide6.png',
-          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`
-        }
-      ]
+          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`,
+        },
+      ],
     }
   },
   mounted() {
@@ -57,7 +69,7 @@ export default {
       } else {
         this.initSlider(optionsDesktop, '.swiper-clientage-desktop')
       }
-    }
-  }
+    },
+  },
 }
 </script>
