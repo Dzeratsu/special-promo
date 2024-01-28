@@ -2,8 +2,8 @@
   <section>
     <div class="mx-auto px-6">
       <h2 class="text-center text-[21px] font-bold sm:text-6xl">
-        РАЗРАБОТАН <span class="max-sm:block">СПЕЦИАЛЬНО</span>
-        <span class="sm:block">для применения с красками и лаками</span>
+        РАЗРАБОТАН СПЕЦИАЛЬНО<br />
+        для применения с красками и лаками
       </h2>
       <div>
         <div

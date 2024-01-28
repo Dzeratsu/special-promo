@@ -1,8 +1,9 @@
 <template>
   <main>
-    <div class="mx-auto max-w-[1170px] max-sm:w-full">
-      <AppHeader />
-      <AppSpecial class="mt-[48px]"/>
+    <AppHeader />
+    <AppBanner class="pt-[30px] lg:pt-[83px]" />
+    <div class="mx-auto max-w-[1170px] pt-[30px] max-sm:w-full lg:pt-[83px]">
+      <AppSpecial class="mt-[48px]" />
       <AppSlider class="mt-[48px]" />
       <AppCombine class="mt-[48px]" />
       <AppChoosePirilax class="mt-[48px]" />
