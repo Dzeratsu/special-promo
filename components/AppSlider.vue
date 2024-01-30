@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="mx-auto px-6">
-      <h2 class="text-center text-[21px] font-bold sm:text-6xl">
-        С Pirilax-Special совместить огнезащиту и <br />декор стало возможным!
+      <h2 class="text-center text-[21px] font-bold sm:text-6xl 	text-transform: uppercase">
+        С Pirilax®-Special совместить огнезащиту и </br>
+        декор стало возможным!
       </h2>
     </div>
     <ul
@@ -17,6 +18,17 @@
         <span class="mt-[14px] text-center" v-html="item.text"></span>
       </li>
     </ul>
+    <div class="swiper swiper-img hidden max-sm:block">
+      <ul class="swiper-wrapper">
+        <li v-for="item in slide"
+            :key="item.text"
+            class="flex flex-col items-center swiper-slide"
+        >
+          <img :src="item.imgSrc" width="370" height="255" />
+          <span class="mt-[14px] text-center" v-html="item.text"></span>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -32,32 +44,42 @@ export default {
         { imgSrc: 'img/slide/slide4.png', text: '<p>Потолки, стены</p>' },
         {
           imgSrc: 'img/slide/slide5.png',
-          text: '<p>Элементы декоративной отделки,<br> предметов интерьера</p>',
+          text: '<p>Элементы декоративной отделки,<br> предметов интерьера</p>'
         },
         {
           imgSrc: 'img/slide/slide6.png',
-          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`,
-        },
-      ],
+          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`
+        }
+      ]
     }
   },
   mounted() {
-    this.configSlider()
-  },
-  methods: {
-    initSlider(options, classSwiper) {
-      /* eslint-disable no-unused-vars */
-      const swiper = new this.$swiper(classSwiper, options)
-    },
-    configSlider(b) {
-      const optionsMobile = {}
-      const optionsDesktop = {}
-      if (window.innerWidth < 768) {
-        this.initSlider(optionsMobile, '.swiper-clientage-mobile')
-      } else {
-        this.initSlider(optionsDesktop, '.swiper-clientage-desktop')
-      }
-    },
-  },
+    /* eslint-disable no-unused-vars */
+    const swiper = new this.$swiper('.swiper-img', {
+    })
+  }
 }
 </script>
+<style>
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
