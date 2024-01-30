@@ -2,7 +2,11 @@
   <section>
     <div class="mx-auto px-6">
       <h2 class="text-center text-[21px] font-bold sm:text-6xl">
-        Уникальный <span class="max-sm:block">огнебиозащитный состав, <span class="sm:block">совместимый с лаками и красками!</span></span>
+        Уникальный
+        <span class="max-sm:block"
+          >огнебиозащитный состав,
+          <span class="sm:block">совместимый с лаками и красками!</span></span
+        >
       </h2>
       <div>
         <div
@@ -29,10 +33,13 @@
           </div>
         </div>
       </div>
-      <AppButton link="https://www.nort-udm.ru/upload/iblock/e3a/e3acb41b4f341335863eb551bddb6087.pdf" class="mt-[39px]">
+      <AppButton
+        link="https://www.nort-udm.ru/upload/iblock/e3a/e3acb41b4f341335863eb551bddb6087.pdf"
+        class="mt-[39px]"
+      >
         <div class="flex items-center justify-center gap-4">
-        <span>Инстуркция</span>
-        <img src="img/load.svg" width="23" height="23" alt="load"/>
+          <span>Инстуркция</span>
+          <img src="img/load.svg" width="23" height="23" alt="load" />
         </div>
       </AppButton>
     </div>

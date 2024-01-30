@@ -14,7 +14,7 @@ module.exports = {
       white: '#FFFFFF',
       gray: '#ECECEC',
       'bg-gray': '#F8F8F8',
-      yellow: '#FFEE00'
+      yellow: '#FFEE00',
     },
     fontSize: {
       xs: ['.8125rem', '1.1375rem'], // 13px

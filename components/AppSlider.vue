@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="mx-auto px-6">
-      <h2 class="text-center text-[21px] font-bold sm:text-6xl 	text-transform: uppercase">
-        С Pirilax®-Special совместить огнезащиту и </br>
+      <h2
+        class="text-transform: text-center text-[21px] font-bold uppercase sm:text-6xl"
+      >
+        С Pirilax®-Special совместить огнезащиту и <br />
         декор стало возможным!
       </h2>
     </div>
@@ -20,9 +22,10 @@
     </ul>
     <div class="swiper swiper-img hidden max-sm:block">
       <ul class="swiper-wrapper">
-        <li v-for="item in slide"
-            :key="item.text"
-            class="flex flex-col items-center swiper-slide"
+        <li
+          v-for="item in slide"
+          :key="item.text"
+          class="swiper-slide flex flex-col items-center"
         >
           <img :src="item.imgSrc" width="370" height="255" />
           <span class="mt-[14px] text-center" v-html="item.text"></span>
@@ -44,24 +47,22 @@ export default {
         { imgSrc: 'img/slide/slide4.png', text: '<p>Потолки, стены</p>' },
         {
           imgSrc: 'img/slide/slide5.png',
-          text: '<p>Элементы декоративной отделки,<br> предметов интерьера</p>'
+          text: '<p>Элементы декоративной отделки,<br> предметов интерьера</p>',
         },
         {
           imgSrc: 'img/slide/slide6.png',
-          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`
-        }
-      ]
+          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`,
+        },
+      ],
     }
   },
   mounted() {
     /* eslint-disable no-unused-vars */
-    const swiper = new this.$swiper('.swiper-img', {
-    })
-  }
+    const swiper = new this.$swiper('.swiper-img', {})
+  },
 }
 </script>
 <style>
-
 .swiper {
   width: 100%;
   height: 100%;
