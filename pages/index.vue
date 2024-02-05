@@ -9,12 +9,16 @@
       <AppChoosePirilax class="mt-[48px]" />
       <AppReady class="mt-[48px]" />
       <AppReviews class="mt-[48px]" />
+      <AppScrollToTo/>
     </div>
   </main>
 </template>
 
 <script>
+import AppScrollToTo from "../components/AppScrollToTop.vue";
+
 export default {
   name: 'IndexPage',
+  components: {AppScrollToTo},
 }
 </script>

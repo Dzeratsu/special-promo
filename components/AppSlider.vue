@@ -17,10 +17,10 @@
         class="flex flex-col items-center"
       >
         <img :src="item.imgSrc" width="370" height="255" />
-        <span class="mt-[14px] text-center" v-html="item.text"></span>
+        <span class="mt-[14px] text-center text-[21px]" v-html="item.text"></span>
       </li>
     </ul>
-    <div class="swiper swiper-img hidden max-sm:block">
+    <div class="swiper hidden max-sm:block">
       <ul class="swiper-wrapper">
         <li
           v-for="item in slide"
@@ -28,7 +28,7 @@
           class="swiper-slide flex flex-col items-center"
         >
           <img :src="item.imgSrc" width="370" height="255" />
-          <span class="mt-[14px] text-center" v-html="item.text"></span>
+          <span class="mt-[14px] text-cente" v-html="item.text"></span>
         </li>
       </ul>
     </div>
@@ -58,7 +58,12 @@ export default {
   },
   mounted() {
     /* eslint-disable no-unused-vars */
-    const swiper = new this.$swiper('.swiper-img', {})
+    const swiper = new this.$swiper('.swiper', {
+      grabCursor: true,
+      modules: [this.$swiperModules.Navigation],
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+    })
   },
 }
 </script>
@@ -72,6 +77,8 @@ export default {
   text-align: center;
   font-size: 18px;
   background: #fff;
+
+  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,4 +90,5 @@ export default {
   height: 100%;
   object-fit: cover;
 }
+
 </style>

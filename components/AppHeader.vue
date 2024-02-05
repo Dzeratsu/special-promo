@@ -130,20 +130,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.header-wrapper {
-  background-color: white;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  position: fixed;
-  z-index: 100;
-}
-
-.header-container {
-  max-width: 1170px;
-  margin: auto;
-}
-</style>
