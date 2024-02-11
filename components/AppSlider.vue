@@ -17,7 +17,10 @@
         class="flex flex-col items-center"
       >
         <img :src="item.imgSrc" width="370" height="255" />
-        <span class="mt-[14px] text-center text-[21px]" v-html="item.text"></span>
+        <span
+          class="mt-[14px] text-center text-[21px]"
+          v-html="item.text"
+        ></span>
       </li>
     </ul>
     <div class="swiper hidden max-sm:block">
@@ -90,5 +93,4 @@ export default {
   height: 100%;
   object-fit: cover;
 }
-
 </style>
