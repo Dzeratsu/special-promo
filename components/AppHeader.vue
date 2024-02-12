@@ -9,7 +9,7 @@
           height="68"
           src="img/logo.png"
           alt="logo nort"
-          class="hidden cursor-pointer lg:block"
+          class="hidden lg:block"
           @click="closeMenu"
         />
         <img
@@ -17,7 +17,7 @@
           height="35"
           src="img/logo-mob.png"
           alt="logo nort-mob"
-          class="cursor-pointer lg:hidden"
+          class="lg:hidden"
           @click="closeMenu"
         />
         <ul class="flex gap-x-8 text-base text-lg only-md:hidden max-lg:hidden">
@@ -67,19 +67,19 @@
             </svg>
           </button>
           <div
-            class="fixed left-0 top-[4rem] h-full w-full transition-all sm:static sm:block sm:bg-[rgba(0,0,0,0)]"
+            class="fixed left-0 top-[3rem] h-full w-full transition-all sm:static sm:block sm:bg-[rgba(0,0,0,0)]"
             :class="[{ hidden: !openMenu }, { ['z-100 block']: openMenu }]"
             @click="closeMenu"
           >
             <ul
-              class="absolute right-0 top-0 flex-nowrap items-end justify-center bg-white p-4 pb-[24px] text-right transition-opacity duration-200 ease-in-out sm:opacity-100 md:w-auto lg:static lg:flex lg:justify-end lg:p-0 lg:text-xs xl:w-[33rem] xl:text-sm 2xl:w-[38rem]"
+              class="absolute right-0 top-0 flex-nowrap items-end justify-center bg-white p-4 pb-[24px] text-left transition-opacity duration-200 ease-in-out sm:opacity-100 md:w-auto lg:static lg:flex lg:justify-end lg:p-0 w-[200px] lg:text-xs xl:w-[45rem] xl:text-sm 2xl:w-[38rem]"
               :class="{
                 'max-lg:pointer-events-none max-lg:opacity-0': !openMenu,
                 'max-lg:opacity-100': openMenu,
               }"
               @click="openMenu = false"
             >
-              <li v-for="item in link" :key="item.link">
+              <li v-for="item in link" :key="item.link" class="mt-[10px]">
                 <NuxtLink :to="item.link">{{ item.name }} </NuxtLink>
               </li>
             </ul>
@@ -100,7 +100,7 @@ export default {
         { name: 'Свойства', link: '#property' },
         { name: 'Как работает', link: '#works' },
         { name: 'Готовые решения', link: '#ready-solutions' },
-        { name: 'Где купить', link: '#buy' },
+/*        { name: 'Где купить', link: '#buy' } , */
         { name: 'Отзывы', link: '#reviews' },
       ],
     }

@@ -1,10 +1,14 @@
 <template>
   <section>
+                <span
+                  id="reviews"
+                  class="block absolute -mt-32 lg:-mt-24"
+                ></span>
     <div class="mx-auto px-6">
       <app-title>ОТЗЫВЫ ПОКУПАТЕЛЕЙ </app-title>
       <article class="mt-[25px] sm:mt-[61px]">
         <div
-          class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow"
+          class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
           <img
             class="sm:hidden"
@@ -24,7 +28,7 @@
       </article>
       <article class="mt-[25px] sm:mt-[50px]">
         <div
-          class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow"
+          class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
           <img
             class="sm:hidden"
@@ -44,7 +48,7 @@
       </article>
       <article class="sm:mt-[50px]ppm mt-[25px]">
         <div
-          class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow"
+          class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
           <img
             class="sm:hidden"
@@ -62,6 +66,15 @@
           />
         </div>
       </article>
+    </div>
+    <div class="flex justify-center my-[30px] sm:my-[50px]">
+      <a href="https://www.nort-udm.ru" target="_blank" class="block  w-[327px] sm:w-[570px]">
+        <button
+          class="w-full rounded-[15px] bg-yellow py-[6px] text-center text-[16px] hover:shadow-xl sm:text-[28px] font-semibold"
+        >
+          Покупайте у официальных дилеров<br> и на маркетплейсах
+        </button>
+      </a>
     </div>
   </section>
 </template>

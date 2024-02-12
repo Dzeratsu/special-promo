@@ -1,5 +1,9 @@
 <template>
   <section>
+            <span
+              id="property"
+              class="block absolute -mt-32 lg:-mt-24"
+            ></span>
     <div class="mx-auto px-6">
       <h2 class="text-center text-[21px] font-bold sm:text-6xl">
         СОЧЕТАЙТЕ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ СОСТАВОВ PIRILAX
@@ -29,6 +33,10 @@
             </div>
           </div>
         </article>
+        <span
+          id="works"
+          class="block absolute -mt-32 lg:-mt-24"
+        ></span>
         <client-only>
           <article class="mx-auto mt-[41px] lg:mt-[80px]">
             <iframe

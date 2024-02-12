@@ -2,15 +2,13 @@
   <main>
     <AppHeader />
     <AppBanner class="pt-[30px] lg:pt-[83px]" />
-    <div class="mx-auto max-w-[1170px] pt-[30px] max-sm:w-full lg:pt-[83px]">
-      <AppSpecial class="mt-[48px]" />
-      <AppSlider class="mt-[48px]" />
-      <AppCombine class="mt-[48px]" />
-      <AppChoosePirilax class="mt-[48px]" />
-      <AppReady class="mt-[48px]" />
-      <AppReviews class="mt-[48px]" />
+      <AppSpecial/>
+     <div class="bg-bg-gray py-[27px] sm:py-[80px]"> <AppSlider class="max-w-[1170px] mx-auto" /></div>
+      <AppCombine class="py-[27px] sm:py-[80px] max-w-[1170px] mx-auto" />
+      <div class="bg-bg-gray py-[27px] sm:py-[80px]">  <AppChoosePirilax class="max-w-[1170px] mx-auto" /></div>
+      <AppReady class=" py-[27px] sm:py-[80px] max-w-[1170px] mx-auto" />
+      <div class="bg-bg-gray py-[40px] ">   <AppReviews class="max-w-[1170px] mx-auto" /></div>
       <AppScrollToTo />
-    </div>
   </main>
 </template>
 
