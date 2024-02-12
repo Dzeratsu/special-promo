@@ -1,18 +1,24 @@
 <template>
   <div
-    class="flex items-center gap-4 pt-5 text-base font-semibold leading-[16px] sm:text-[21px] sm:leading-[21px]"
+    class="flex items-center gap-4 pt-5 text-base font-semibold leading-[16px] sm:text-[21px] sm:leading-[21px] flex-shrink-1"
   >
-    <span
-      class="block h-[30px] w-[30px] flex-shrink-0 rounded-[5px] bg-gray pb-[7px] pl-[7px] pr-[8px] pt-[8px] sm:h-[40px] sm:w-[40px] sm:pb-[9px] sm:pl-[9px] sm:pr-[1px] sm:pt-[11px]"
-    >
-      <img alt="approve" src="img/approve.svg" width="19" height="19" />
-    </span>
-    <p class="text-[21px] max-sm:text-[16px]"><slot /></p>
+    <div class="max-sm:min-w-[60px] sm:w-[40px]">
+      <img v-if="!white" alt="approve" src="img/approve.svg" width="40" height="40" />
+      <img v-else alt="approve" src="img/approve-white.svg" width="40" height="40" />
+    </div>
+    <p class="text-[21px] max-sm:text-[16px]"><slot/></p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'ApproveImage',
+  props: {
+    white: {
+      type: Boolean,
+      require: false,
+      default: false
+    }
+  }
 }
 </script>

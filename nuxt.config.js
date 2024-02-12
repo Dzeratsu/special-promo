@@ -49,7 +49,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['./swiper/swiper-bundle.min.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/swiper-slider.js', mode: 'client' }],
@@ -79,6 +79,14 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
+  },
+  tailwindcss: {
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {},
+    injectPosition: 'first',
+    viewer: true,
+    cssPath: '~/assets/css/tailwind.css',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

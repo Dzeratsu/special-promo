@@ -23,17 +23,19 @@
         ></span>
       </li>
     </ul>
-    <div class="swiper hidden max-sm:block">
-      <ul class="swiper-wrapper">
+   <div class="swiper hidden max-sm:block">
+      <ul class=" swiper-wrapper mt-4">
         <li
           v-for="item in slide"
           :key="item.text"
-          class="swiper-slide flex flex-col items-center"
+          class=" swiper-slide flex flex-col items-center text-center"
         >
-          <img :src="item.imgSrc" width="370" height="255" />
-          <span class="mt-[14px] text-cente" v-html="item.text"></span>
+          <img :src="item.imgSrc" />
+          <span class="mt-[12px] text-cente" v-html="item.text"></span>
         </li>
       </ul>
+     <div class="swiper-button-next"></div>
+     <div class="swiper-button-prev"></div>
     </div>
   </div>
 </template>
@@ -63,8 +65,11 @@ export default {
     /* eslint-disable no-unused-vars */
     const swiper = new this.$swiper('.swiper', {
       grabCursor: true,
-      modules: [this.$swiperModules.Navigation],
-      slidesPerView: 'auto',
+      modules: [this.$swiperModules.Navigation, this.$swiperModules.Pagination],
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       spaceBetween: 16,
     })
   },
@@ -78,8 +83,6 @@ export default {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
 
   /* Center slide text vertically */
   display: flex;
@@ -92,5 +95,13 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-button-next {
+  margin-top: -50px;
+  color: #FFEE00;
+}
+.swiper-button-prev {
+  margin-top: -50px;
+  color: #FFEE00;
 }
 </style>
