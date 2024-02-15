@@ -1,8 +1,8 @@
 <template>
   <header
-    class="fixed top-0 z-[101] mx-auto w-full border-b border-gray bg-white px-6"
+    class="fixed  top-0 z-[101] mx-auto w-full border-b border-gray bg-white px-6"
   >
-    <div class="mx-auto lg:w-[1170px]">
+    <div class="mx-auto 2xl:max-w-[1380px] xl:max-w-[1030px] lg:max-w-[600]">
       <div class="my-2 flex items-center justify-between">
         <img
           width="145"

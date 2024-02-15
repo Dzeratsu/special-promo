@@ -26,8 +26,8 @@
           <img
             src="img/special_mob.svg"
             alt="pirilax-special-mob"
-            width="176"
-            height="159"
+            width="260"
+            height="234"
             class="sm:hidden"
           />
           <div class="mt-[21px]">

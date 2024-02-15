@@ -34,7 +34,7 @@ module.exports = {
       '10xl': ['5.375rem', '6.5rem'], // 86px
     },
     screens: {
-      mob: '376px',
+      mob: '495px',
       'max-sm': { max: '639px' },
 
       sm: '640px',

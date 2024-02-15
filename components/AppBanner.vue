@@ -3,7 +3,7 @@
     <img
       src="img/banner.png"
       alt="pirilax special"
-      width="1920"
+      width="1953"
       height="765"
       class="mx-auto hidden mob:block"
     />
@@ -12,7 +12,7 @@
       alt="pirilax special"
       width="375"
       height="213"
-      class="mob:hidden"
+      class="mob:hidden w-full pt-6"
     />
   </div>
 </template>
