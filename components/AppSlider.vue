@@ -23,19 +23,19 @@
         ></span>
       </li>
     </ul>
-   <div class="swiper hidden max-sm:block">
-      <ul class=" swiper-wrapper mt-4">
+    <div class="swiper hidden max-sm:block">
+      <ul class="swiper-wrapper mt-4">
         <li
           v-for="item in slide"
           :key="item.text"
-          class=" swiper-slide flex flex-col items-center text-center"
+          class="swiper-slide flex flex-col items-center text-center"
         >
           <img :src="item.imgSrc" />
           <span class="mt-[12px] text-cente" v-html="item.text"></span>
         </li>
       </ul>
-     <div class="swiper-button-next"></div>
-     <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </template>
@@ -67,8 +67,8 @@ export default {
       grabCursor: true,
       modules: [this.$swiperModules.Navigation, this.$swiperModules.Pagination],
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       spaceBetween: 16,
     })
@@ -98,10 +98,11 @@ export default {
 }
 .swiper-button-next {
   margin-top: -50px;
-  color: #FFEE00;
+  color: #ffee00;
+  width: 15px;
 }
 .swiper-button-prev {
   margin-top: -50px;
-  color: #FFEE00;
+  color: #ffee00;
 }
 </style>

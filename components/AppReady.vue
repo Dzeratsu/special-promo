@@ -1,12 +1,11 @@
 <template>
   <section>
-            <span
-              id="ready-solutions"
-              class="block absolute -mt-32 lg:-mt-24"
-            ></span>
+    <span id="ready-solutions" class="block absolute -mt-32 lg:-mt-24"></span>
     <div class="mx-auto px-6">
       <app-title>ГОТОВЫЕ КОМПЛЕКСНЫЕ РЕШЕНИЯ</app-title>
-      <div class="max-sm:flex-col flex gap-x-[30px] max-sm:mt-[18px] sm:mt-[61px]">
+      <div
+        class="max-sm:flex-col flex gap-x-[30px] max-sm:mt-[18px] sm:mt-[61px]"
+      >
         <div class="sm:w-6/12">
           <div class="flex items-start sm:items-center flex-shrink-1">
             <img
@@ -43,7 +42,6 @@
         <div class="max-sm:mt-[36px] sm:w-6/12">
           <div class="flex items-start sm:items-center">
             <img
-
               class="sm:hidden"
               src="img/ready-icon1mob.svg"
               width="48"
@@ -51,7 +49,6 @@
               alt="#"
             />
             <img
-
               class="hidden sm:block"
               src="img/ready-icon1.svg"
               width="70"
@@ -81,7 +78,7 @@
     <AppButton
       link="https://www.nort-udm.ru/mesta-prodazh/"
       class="sm:mt-[66px] mt-[33px]"
-    >Узнайте, где купить
+      >Узнайте, где купить
     </AppButton>
   </section>
 </template>
@@ -91,6 +88,6 @@ import AppButton from '@/components/global/AppButton.vue'
 
 export default {
   name: 'AppReady',
-  components: { AppButton, AppTitle }
+  components: { AppButton, AppTitle },
 }
 </script>
