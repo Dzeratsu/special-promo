@@ -1,11 +1,10 @@
 <template>
   <header
-    class="fixed top-0 z-[101] mx-auto w-full border-b border-gray bg-white px-6"
+    class="fixed top-0 z-[101] mx-auto w-full border-b border-gray bg-white px-3"
   >
-    <div class="mx-auto 2xl:max-w-[1380px] xl:max-w-[1030px] lg:max-w-[600]">
+    <div class="mx-auto 2xl:max-w-[1380px] lg:max-w-[600]">
       <div class="my-2 flex items-center justify-between">
-        <!--       <div class="flex items-center gap-x-4">-->
-        <div>
+        <div class="flex items-center lg:gap-x-4 gap-x-2">
           <img
             width="145"
             height="68"
@@ -22,9 +21,9 @@
             class="lg:hidden"
             @click="closeMenu"
           />
-          <!--         <div class="sm:text-xl text-[16px] text-center">ООО "Новейшие Огнезащитные Русские Технологии"</div>-->
+          <div class="sm:text-lg text-center sm:block lg:max-w-full max-sm:text-left leading-[13px]">ООО "Новейшие Огнезащитные Русские Технологии"</div>
         </div>
-        <ul class="flex gap-x-8 text-base text-lg only-md:hidden max-lg:hidden">
+        <ul class="flex gap-x-8 text-lg only-md:hidden max-lg:hidden">
           <li v-for="item in link" :key="item.link" class="hover:underline">
             <NuxtLink :to="item.link">{{ item.name }} </NuxtLink>
           </li>
