@@ -3,7 +3,7 @@
     <span id="property" class="block absolute -mt-32 lg:-mt-24"></span>
     <div class="mx-auto px-6">
       <h2 class="text-center text-[21px] font-bold sm:text-6xl">
-        СОЧЕТАЙТЕ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ СОСТАВОВ PIRILAX
+        СОЧЕТАЕТ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ СОСТАВОВ PIRILAX
       </h2>
       <div class="mx-auto mt-5 max-sm:px-0 max-sm:leading-4 lg:px-6">
         <article

@@ -11,7 +11,7 @@
       </h2>
       <div>
         <div
-          class="mt-5 flex flex-col items-center sm:flex-row sm:justify-center sm:gap-[57px]"
+          class="mt-5 flex flex-col items-center md:flex-row sm:justify-center sm:gap-[57px]"
         >
           <img
             class="hidden sm:block"
@@ -39,7 +39,7 @@
         class="mt-[39px]"
       >
         <div class="flex items-center justify-center gap-4">
-          <span>Инстуркция</span>
+          <span>Инструкция</span>
           <img src="img/load.svg" width="23" height="23" alt="load" />
         </div>
       </AppButton>
@@ -56,11 +56,11 @@ export default {
   data() {
     return {
       text: [
-        'Можно наносить на окрашенные поверхности!',
-        'Cовместим с большинством ЛКМ',
-        'Бесцветный, не изменяет цвет древесины и декоративного покрытия',
+        'Можно наносить на чистую древесину',
+        'Можно наносить на ранее окрашенную древесину',
+        'На древесину, обработанную «PIRILAX®»-Special, можно наносить лаки и краски',
+        'Бесцветный – не тонирует древесину и не изменяет цвет декоративного покрытия',
         'Не образует высолов',
-        'Подходит для наружных и внутренних работ',
       ],
     }
   },

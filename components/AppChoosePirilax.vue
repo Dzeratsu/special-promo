@@ -1,9 +1,12 @@
 <template>
   <section>
     <div class="mx-auto px-6">
-      <app-title>ВЫБИРАЙТЕ PIRILAX-SPECIAL</app-title>
+      <app-title
+        >ВЫБИРАЙТЕ
+        <span class="max-sm:block inline">PIRILAX-SPECIAL</span></app-title
+      >
     </div>
-    <div class="mx-auto py-6 px-6 md:pl-[170px]">
+    <div class="mx-auto px-6 md:pl-[170px]">
       <ApproveImage :white="true" class="mt-[20px]"
         >Если хотите получить цветное декоративное покрытие с огнебиозащитным
         эффектом</ApproveImage

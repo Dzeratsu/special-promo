@@ -4,10 +4,10 @@
     <div class="mx-auto px-6">
       <app-title>ГОТОВЫЕ КОМПЛЕКСНЫЕ РЕШЕНИЯ</app-title>
       <div
-        class="max-sm:flex-col flex gap-x-[30px] max-sm:mt-[18px] sm:mt-[61px]"
+        class="max-sm:flex-col flex gap-x-[30px] max-sm:mt-[18px] sm:mt-[61px] flex-row-reverse"
       >
         <div class="sm:w-6/12">
-          <div class="flex items-start sm:items-center flex-shrink-1">
+          <div class="flex items-center sm:items-center flex-shrink-1">
             <img
               class="hidden sm:block"
               src="img/ready-icon1.svg"
@@ -24,7 +24,7 @@
             />
             <ul class="ml-[18px] sm:ml-[30px]">
               <li class="text-[16px] font-semibold lg:text-[21px]">
-                Для внутренних работ
+                Для ВНУТРЕННИХ работ
               </li>
               <li class="text-[16px] max-sm:leading-[15px] lg:text-[21px]">
                 Цвет + Защита от огня, плесени, растрескивания, старения
@@ -40,7 +40,7 @@
           />
         </div>
         <div class="max-sm:mt-[36px] sm:w-6/12">
-          <div class="flex items-start sm:items-center">
+          <div class="flex items-center sm:items-center">
             <img
               class="sm:hidden"
               src="img/ready-icon1mob.svg"
@@ -57,7 +57,7 @@
             />
             <ul class="ml-[18px] sm:ml-[30px]">
               <li class="text-[16px] font-semibold lg:text-[21px]">
-                Для наружных работ
+                Для НАРУЖНЫХ работ
               </li>
               <li class="text-[16px] max-sm:leading-[15px] lg:text-[21px]">
                 Цвет + Защита от огня, плесени, растрескивания, старения,

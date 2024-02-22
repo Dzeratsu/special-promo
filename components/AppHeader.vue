@@ -4,22 +4,26 @@
   >
     <div class="mx-auto 2xl:max-w-[1380px] xl:max-w-[1030px] lg:max-w-[600]">
       <div class="my-2 flex items-center justify-between">
-        <img
-          width="145"
-          height="68"
-          src="img/logo.png"
-          alt="logo nort"
-          class="hidden lg:block"
-          @click="closeMenu"
-        />
-        <img
-          width="76"
-          height="35"
-          src="img/logo-mob.png"
-          alt="logo nort-mob"
-          class="lg:hidden"
-          @click="closeMenu"
-        />
+        <!--       <div class="flex items-center gap-x-4">-->
+        <div>
+          <img
+            width="145"
+            height="68"
+            src="img/logo.png"
+            alt="logo nort"
+            class="hidden lg:block"
+            @click="closeMenu"
+          />
+          <img
+            width="76"
+            height="35"
+            src="img/logo-mob.png"
+            alt="logo nort-mob"
+            class="lg:hidden"
+            @click="closeMenu"
+          />
+          <!--         <div class="sm:text-xl text-[16px] text-center">ООО "Новейшие Огнезащитные Русские Технологии"</div>-->
+        </div>
         <ul class="flex gap-x-8 text-base text-lg only-md:hidden max-lg:hidden">
           <li v-for="item in link" :key="item.link" class="hover:underline">
             <NuxtLink :to="item.link">{{ item.name }} </NuxtLink>

@@ -52,7 +52,7 @@ export default {
         { imgSrc: 'img/slide/slide4.png', text: '<p>Потолки, стены</p>' },
         {
           imgSrc: 'img/slide/slide5.png',
-          text: '<p>Элементы декоративной отделки,<br> предметов интерьера</p>',
+          text: '<p>Элементы декоративной отделки,<br> предметы интерьера</p>',
         },
         {
           imgSrc: 'img/slide/slide6.png',
@@ -97,11 +97,13 @@ export default {
   object-fit: cover;
 }
 .swiper-button-next {
+  font-weight: 900;
   margin-top: -50px;
   color: #ffee00;
   width: 15px;
 }
 .swiper-button-prev {
+  font-weight: 900;
   margin-top: -50px;
   color: #ffee00;
 }
