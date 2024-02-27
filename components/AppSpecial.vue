@@ -28,7 +28,7 @@
             class="sm:hidden"
           />
           <div class="mt-[21px]">
-            <div v-for="(item, index) in text" :key="index">
+            <div v-for="(item, index) in text" :key="index" class="">
               <ApproveImage>{{ item }}</ApproveImage>
             </div>
           </div>

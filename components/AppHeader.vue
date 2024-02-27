@@ -21,7 +21,10 @@
             class="lg:hidden"
             @click="closeMenu"
           />
-          <div class="sm:text-lg text-center sm:block lg:max-w-full max-sm:text-left leading-[13px]">ООО "Новейшие Огнезащитные Русские Технологии"</div>
+          <div class="sm:text-lg text-left sm:block lg:max-w-full max-sm:text-left leading-[13px] max-sm:text-[11px] text-[21px]">
+            <p class="font-normal"><a href="mailto:special@ooonort.ru">special@ooonort.ru</a></p>
+            <p class="font-semibold"> <a href="tel:88002509017">8 (800) 250 90 17</a></p>
+          </div>
         </div>
         <ul class="flex gap-x-8 text-lg only-md:hidden max-lg:hidden">
           <li v-for="item in link" :key="item.link" class="hover:underline">

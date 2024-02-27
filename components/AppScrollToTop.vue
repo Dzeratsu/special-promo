@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="$store.state.positionY > 750"
-    class="fixed left-[70px] bottom-[30px] pointer hidden lg:block"
+    class="fixed left-[70px] bottom-[120px] pointer hidden lg:block"
     @click="scroll"
   >
     <button class="px-[27px] py-[32px] rounded-full shadowCircle">

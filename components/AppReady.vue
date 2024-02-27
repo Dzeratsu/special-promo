@@ -10,7 +10,7 @@
           <div class="flex items-center sm:items-center flex-shrink-1">
             <img
               class="hidden sm:block"
-              src="img/ready-icon1.svg"
+              src="img/ready-icon2.svg"
               width="70"
               height="70"
               alt="#"
@@ -43,7 +43,7 @@
           <div class="flex items-center sm:items-center">
             <img
               class="sm:hidden"
-              src="img/ready-icon1mob.svg"
+              src="img/ready-icon2mob.svg"
               width="48"
               height="48"
               alt="#"
@@ -60,8 +60,7 @@
                 Для НАРУЖНЫХ работ
               </li>
               <li class="text-[16px] max-sm:leading-[15px] lg:text-[21px]">
-                Цвет + Защита от огня, плесени, растрескивания, старения,
-                <span class="max-sm:hidden">выцветания, влаги</span>
+                Цвет + Защита от огня, плесени, растрескивания, старения, выцветания, влаги
               </li>
             </ul>
           </div>

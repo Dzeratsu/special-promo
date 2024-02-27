@@ -34,7 +34,7 @@
         height="29"
       />
     </div>
-    <p class="text-[21px] max-sm:text-[16px]"><slot /></p>
+    <p class="lg:text-[21px] text-[16px]"><slot /></p>
   </div>
 </template>
 
