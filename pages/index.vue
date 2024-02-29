@@ -15,6 +15,7 @@
       <AppReviews class="max-w-[1170px] mx-auto" />
     </div>
     <AppScrollToTo />
+    <AppMarketplace class="max-w-[1170px] mx-auto"/>
     <AppFooter/>
   </main>
 </template>
