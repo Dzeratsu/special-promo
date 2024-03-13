@@ -10,22 +10,24 @@
     <div class="bg-bg-gray py-[27px] sm:py-[80px]">
       <AppChoosePirilax class="max-w-[1170px] mx-auto" />
     </div>
+    <AppPopup />
     <AppReady class="py-[27px] sm:py-[80px] max-w-[1170px] mx-auto" />
     <div class="bg-bg-gray py-[40px]">
       <AppReviews class="max-w-[1170px] mx-auto" />
     </div>
     <AppScrollToTo />
-    <AppPhone/>
-    <AppMarketplace class="max-w-[1170px] mx-auto"/>
-    <AppFooter/>
+    <AppPhone />
+    <AppMarketplace class="max-w-[1170px] mx-auto" />
+    <AppFooter />
   </main>
 </template>
 
 <script>
 import AppScrollToTo from '../components/AppScrollToTop.vue'
+import AppPopup from '@/components/global/AppPopup.vue'
 
 export default {
   name: 'IndexPage',
-  components: { AppScrollToTo },
+  components: { AppPopup, AppScrollToTo },
 }
 </script>

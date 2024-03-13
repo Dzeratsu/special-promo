@@ -1,6 +1,9 @@
+// eslint-disable-next-line camelcase
+const { SITE_KEY } = process.env
 export default {
-  generate: {
-    fallback: '404.html',
+  targer: 'server',
+  eslint: {
+    fix: true,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -51,10 +54,16 @@ export default {
   css: ['./swiper/swiper-bundle.min.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/swiper-slider.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/swiper-slider.js', mode: 'client' },
+    { src: '~/plugins/v-mask.js', mode: 'client' },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  serverMiddleware: {
+    '/api': `~/api`,
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -72,6 +81,8 @@ export default {
     '@nuxt/image',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-logger',
+    '@nuxtjs/recaptcha',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -91,4 +102,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   image: {},
+  recaptcha: {
+    hideBadge: true,
+    siteKey: SITE_KEY,
+    version: 2,
+    size: 'invisible',
+  },
 }

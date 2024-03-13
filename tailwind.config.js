@@ -15,6 +15,9 @@ module.exports = {
       gray: '#ECECEC',
       'bg-gray': '#F8F8F8',
       yellow: '#FFEE00',
+      popup: 'rgba(0, 0, 0, 0.3)',
+      polit: 'rgba(14,9,24,.7)',
+      cBorder: '#0E0918',
     },
     fontSize: {
       xs: ['.8125rem', '1.1375rem'], // 13px
