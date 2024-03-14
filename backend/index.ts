@@ -9,6 +9,11 @@ const app: Express = express()
   try {
     await connect
     app.use(bodyParser.json())
+    app.use(
+      bodyParser.urlencoded({
+        extended: true,
+      })
+    )
     app.use(router)
     console.log(message.start)
   } catch (e: unknown) {

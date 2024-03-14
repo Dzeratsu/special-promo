@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed z-50 right-[70px] bottom-[120px] pointer hidden lg:block">
+  <div class="fixed z-50 lg:right-[70px] right-[20px] lg:bottom-[120px] bottom-[100px] pointer lg:block">
     <div class="grid gap-10">
       <!--      <button
         v-if="openButton"
@@ -33,7 +33,14 @@
           alt="scroll"
           width="31"
           height="31"
-          class="text-xl"
+          class="text-xl hidden lg:block"
+        />
+        <img
+          src="img/phone.svg"
+          alt="scroll"
+          width="16"
+          height="16"
+          class="text-xl lg:hidden"
         />
       </button>
       <button
@@ -46,7 +53,14 @@
           alt="scroll"
           width="31"
           height="31"
-          class="text-xl"
+          class="text-xl hidden lg:block"
+        />
+        <img
+          src="img/cross.svg"
+          alt="scroll"
+          width="16"
+          height="16"
+          class="text-xl lg:hidden"
         />
       </button>
     </div>

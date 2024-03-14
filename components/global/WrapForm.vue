@@ -1,6 +1,9 @@
 <template>
   <div
-    class="w-[342px] sm:w-[410px] bg-white mx-auto p-5 sm:p-6 2xl:p-8 relative z-50 rounded-lg text-[16px]"
+    class="w-[342px] sm:w-[410px] bg-white mx-auto p-5 sm:p-6 2xl:p-8 relative z-50 rounded-lg text-[16px] max-h-[670px] overflow-auto"
+    :class="[{
+      'sm:w-[1000px]' : politic
+    }]"
   >
     <div class="flex justify-end">
       <button
@@ -25,7 +28,8 @@
         </svg>
       </button>
     </div>
-    <form @submit.prevent="sendForm">
+    <div v-if="!politic">
+    <form v-if="!sending" @submit.prevent="sendForm">
       <div class="text-center px-[31px] leading-[22px]">
         <h3 class="text-[24px] font-semibold">Обратный звонок</h3>
         <p>Заполните форму и мы Вам перезвоним</p>
@@ -58,8 +62,10 @@
         />
         <p class="mt-2 text-center text-[12px] text-polit">
           Оставляя свои персональные данные, Вы соглашаетесь с
-          <span class="pointer text-[#FF802E] underline"
-            >Политикой конфиденциальности</span
+          <span
+            class="cursor-pointer text-[#FF802E] underline"
+            @click="openPolitic"
+          >Политикой конфиденциальности</span
           >
         </p>
         <recaptcha @error="onError" />
@@ -71,14 +77,20 @@
         </button>
       </div>
     </form>
+    <div v-else>
+    <h3 class="text-center text-[22px]">Ваш вопрос успешно отправлен!</h3>
+  </div>
+    </div>
+    <AppPolitic v-else/>
   </div>
 </template>
 
 <script>
 import AppDropdown from '~/components/global/AppDropdown'
+import AppPolitic from '~/components/global/AppPolitic'
 export default {
   name: 'LayoutForms',
-  components: { AppDropdown },
+  components: { AppDropdown, AppPolitic },
   data() {
     return {
       allRegion: [
@@ -96,6 +108,7 @@ export default {
         'Вологодская область',
         'Воронежская область',
         'Дагестан республика',
+        'Еврейская автономная область',
         'Забайкальский край',
         'Ивановская область',
         'Ингушетия республика',
@@ -120,14 +133,57 @@ export default {
         'Липецкая область',
         'Магаданская область',
         'Марий Эл республика',
-      ],
+        'Мордовия республика',
+        'Московская область',
+        'Мурманская область',
+        'Ненецкий автономный округ',
+        'Нижегородская область',
+        'Новгородская область',
+        'Новосибирская область',
+        'Омская область',
+        'Оренбургская область',
+        'Орловская область',
+        'Пензенская область',
+        'Пермский край',
+        'Приморский край',
+        'Псковская область',
+        'Ростовская область',
+        'Рязанская область',
+        'Самарская область',
+        'Саратовская область',
+        'Саха (Якутия) республика',
+        'Сахалинская область',
+        'Свердловская область',
+        'Северная Осетия - Алания республика',
+        'Смоленская область',
+        'Ставропольский край',
+        'Тамбовская область',
+        'Татарстан республика',
+        'Тверская область',
+        'Томская область',
+        'Тульская область',
+        'Тыва республика',
+        'Тюменская область',
+        'Удмуртия республика',
+        'Ульяновская область',
+        'Хабаровский край',
+        'Хакасия республика',
+        'Ханты-Мансийский - Югра',
+        'Челябинская область',
+        'Чечня республика',
+        'Чувашия республика',
+        'Чукотский автономный округ',
+        'Ямало-Ненецкий  автономный округ',
+        'Ярославская область'],
       form: {
         name: '',
         phone: '',
         text: '',
         region: '',
-        recaptcha_response_invisible: '',
+        recaptcha_response_invisible: ''
       },
+      sending: false,
+      politic: false,
     }
   },
   methods: {
@@ -137,8 +193,12 @@ export default {
           await this.$recaptcha.getResponse()
         const response = await this.$axios.post(
           '/api/create-lead',
-          JSON.stringify(this.form)
+          this.form
         )
+        if(response.status === 201) {
+          this.sending = true
+          setTimeout(() => this.$store.dispatch('popup/close'), 3000)
+        }
         this.$log.info(response)
       } catch (e) {
         this.$log.error(e)
@@ -147,10 +207,14 @@ export default {
     onError(error) {
       this.$log.error('Recaptcha execute error:', error)
     },
-  },
-  setValue(input) {
-    this.form.region = input
-  },
+    setValue(input) {
+      this.$log.info(input)
+      this.form.region = input.value
+    },
+    openPolitic() {
+      this.politic = true
+    }
+  }
 }
 </script>
 

@@ -1,19 +1,17 @@
 <template>
-  <label class="relative mb-2 z-20 block">
+  <label class="relative mb-2 z-20 block outline-none mt-2">
     <span
-      class="absolute left-0 duration-100 group-active:top-0 z-10 text-xs lg:text-sm 2xl:base"
+      class="absolute left-0 duration-100 group-active:top-0 ml-2 z-10 text-[14px] leading-4 top-5"
       :class="[
-        { 'top-0 text-blue-link text-sm': focus },
-        { 'top-5': !focus },
+        { 'hidden': selected.length > 0 },
         { 'text-gray-300': selected.length === 0 },
-        { 'border-blue-link': selected.length !== 0 },
       ]"
       >{{ title }}</span
     >
     <select
       v-model="selected"
       :name="name"
-      class="py-2 pt-6 min-w-full block duration-300 ease-in border-b outline-none hover:border-blue-link relative z-20 bg-transparent text-xs lg:text-sm 2xl:base"
+      class="pl-1 pr-1 bg-transparent py-4 pt-4 min-w-full block duration-300 ease-in border-gray border-[1px] outline-none rounded-[10px] relative z-20 text-xs lg:text-sm 2xl:base"
       required
       @focus="focus = true"
       @change="checkValueLength"
@@ -22,10 +20,10 @@
     >
       <option
         v-for="property in properties"
-        :key="property.name"
-        :value="property.name"
+        :key="property"
+        :value="property"
       >
-        {{ property.name }}
+        {{ property }}
       </option>
     </select>
   </label>
@@ -66,6 +64,7 @@ export default {
   },
   methods: {
     checkValueLength() {
+      this.$log.info(this.selected)
       this.focus = this.selected.length !== 0
     },
   },
