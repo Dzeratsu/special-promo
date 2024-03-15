@@ -13,7 +13,7 @@ const config = {
   port: 587,
   auth: {
     user: 'tehnop18@gmail.com',
-    pass: process.env.MAIL_PASS
+    pass: "gqaa vvsq apfz oeuy"
   },
 }
 
@@ -22,6 +22,7 @@ const connect = nodemailer.createTransport(config)
 connect.verify((err) => {
   if (err) {
     console.info(err)
+    throw new Error(message.failMail)
   } else {
     console.info(message.startMail)
   }

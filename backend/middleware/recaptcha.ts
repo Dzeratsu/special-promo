@@ -5,7 +5,6 @@ import exception from '../exception/exception'
 import message from '../enum/message'
 import responseStatus from '../enum/response-status'
 
-dotenv.config()
 
 const googleURL = 'https://www.google.com/recaptcha/api/siteverify?secret='
 export default async function recaptcha(

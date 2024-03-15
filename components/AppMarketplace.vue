@@ -44,7 +44,7 @@
             <img src="img/ozon-mob.png" width="58" height="58"
           /></a>
           <a
-            href="https://market.yandex.ru/catalog--propitki/18060868/list?hid=16407095&text=%D0%BF%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81&rt=9&was_redir=1&cpa=1&rs=eJwzEgtgrGLl2L7lJfsqRi6Om-9msgkce_SQGQBiQQk7&_redirectCount=1"
+            href="https://market.yandex.ru/search?was_redir=1&rt=10&rs=eJwdUL0OAWEQvC8iFDRK1YVCo1KJn-SLRqNQKFRyvUqtOeIBiEREiItOc6Ej57iGSuKnklBcRHIqT6BgpplMdmdndjfV9ZXFSATP9nl70S_thRB7oej1PHCY_aP7zv1RCWyA1wzqPVTcIFAdW-ANKI0DlX2gHoPeqaHrvFCRFrhccyqJrjpBRb1RWaV_BbkyBo024OyRnjY9pyvoFe5m0vOBXKe5Q2W5RrdA_yrQWMLTKEFvfFBxQuBuh1hkog9cS3K3Ltxkiw5fJl6ZcrL4DV5t4gNyTs2d3Sd38JiY4OZxG8o0E_28KMzujFMRoscP6ORlcO3Ge6PZH2majhk%2C&suggest_text=%D0%BD%D0%BE%D1%80%D1%82&allowCollapsing=1&local-offers-first=0&glfilter=7893318%3A13323952"
             target="_blank"
           >
             <img src="img/ya-mob.png" width="58" height="58"
