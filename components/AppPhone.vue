@@ -25,7 +25,7 @@
       </button>-->
       <button
         v-if="!$store.state.popup.open"
-        class="p-[20px] rounded-full bg-[#FF802E] test"
+        class="p-[20px] rounded-full callback bg-orange-gr  test callback"
         @click="openPopup"
       >
         <img
@@ -85,4 +85,47 @@ export default {
   },
 }
 </script>
-<style></style>
+<style>
+.callback {
+  position: fixed;
+  z-index: 10;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: calc(100vh - 9.6562em);
+  right: 5.6562em;
+  -webkit-animation: 2s infinite splash;
+  animation: 2s infinite splash;
+  transform-origin: 50%,50%;
+  transform: translate(50%,-50%);
+  will-change: box-shadow,transform;
+  transition: box-shadow .3s,transform .1s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.bg-orange-gr{
+  background: linear-gradient(180deg,#ff802e 0,#ff2d00 100%);
+}
+@-webkit-keyframes splash {
+  0% {
+    box-shadow: 0 0 0 0 #ff802e
+  }
+
+  100% {
+    box-shadow: 0 0 23px 11px rgba(255,128,46,0)
+  }
+}
+
+@keyframes splash {
+  0% {
+    box-shadow: 0 0 0 0 #ff802e
+  }
+
+  100% {
+    box-shadow: 0 0 60px 11px rgba(255,128,46,0)
+  }
+}
+</style>

@@ -7,6 +7,10 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
     link: [
       {
         rel: 'preload',
@@ -38,14 +42,14 @@ export default {
       },
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.png' },
     ],
-    title: 'promoSpecial',
+    title: 'PIRILAX®-special - уникальный огнебиозащитный состав для древесины, под лаки и краски ',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Pirilax огнебиозащтный состав для древесины, защищает древесину от огня, плесени, совместим с лаками и красками' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
   },
@@ -83,6 +87,7 @@ export default {
     '@nuxtjs/axios',
     'nuxt-logger',
     '@nuxtjs/recaptcha',
+    '@nuxtjs/gtm',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -108,4 +113,7 @@ export default {
     version: 2,
     size: 'invisible',
   },
+  gtm: {
+    id: 'GTM-5NTQ88K4'
+  }
 }
