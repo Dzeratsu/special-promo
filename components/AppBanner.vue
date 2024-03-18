@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img
+    <nuxt-img
+      quality="100"
+      format="webp"
       src="img/banner.png"
       alt="pirilax special"
       width="1953"
@@ -8,6 +10,8 @@
       class="mx-auto hidden mob:block"
     />
     <img
+      quality="100"
+      format="webp"
       src="img/banner-mob.png"
       alt="pirilax special"
       width="375"
