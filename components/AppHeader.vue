@@ -36,6 +36,9 @@
           <li v-for="item in link" :key="item.link" class="hover:underline">
             <NuxtLink :to="item.link">{{ item.name }} </NuxtLink>
           </li>
+          <li>
+            <a href="https://www.nort-udm.ru/mesta-prodazh/" target="_blank">Где купить </a>
+          </li>
         </ul>
         <div class="block flex gap-x-3 sm:gap-x-5 lg:hidden">
           <button
@@ -93,6 +96,9 @@
             >
               <li v-for="item in link" :key="item.link" class="mt-[10px]">
                 <NuxtLink :to="item.link">{{ item.name }} </NuxtLink>
+              </li>
+              <li class="mt-[10px]">
+                <a href="https://www.nort-udm.ru/mesta-prodazh/" target="_blank">Где купить </a>
               </li>
             </ul>
           </div>
