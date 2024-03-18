@@ -31,8 +31,8 @@
     <div v-if="!politic">
     <form v-if="!sending" @submit.prevent="sendForm">
       <div class="text-center px-[31px] leading-[22px]">
-        <h3 class="text-[24px] font-semibold">Обратный звонок</h3>
-        <p>Заполните форму и мы Вам перезвоним</p>
+        <h3 class="text-[24px] font-semibold">Остались вопросы?</h3>
+        <p>Заполните форму и наш специалист вам перезвонит!</p>
       </div>
       <div class="mt-2">
         <input

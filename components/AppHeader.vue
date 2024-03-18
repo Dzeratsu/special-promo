@@ -25,10 +25,10 @@
             class="sm:text-lg text-left sm:block lg:max-w-full max-sm:text-left leading-[13px] max-sm:text-[11px] text-[21px]"
           >
             <p class="font-normal">
-              <a href="mailto:special@ooonort.ru">special@ooonort.ru</a>
+              <a href="mailto:special@ooonort.ru" class="underline">special@ooonort.ru</a>
             </p>
             <p class="font-semibold">
-              <a href="tel:88002509017">8 (800) 250 90 17</a>
+              <a href="tel:88002509017" class="underline">8 (800) 250 90 17</a>
             </p>
           </div>
         </div>

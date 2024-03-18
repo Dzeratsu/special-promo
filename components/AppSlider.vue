@@ -1,110 +1,95 @@
 <template>
-  <div>
-    <div class="mx-auto px-6">
-      <h2
-        class="text-transform: text-center text-[21px] font-bold uppercase sm:text-6xl"
-      >
-        С Pirilax®-Special совместить огнезащиту и <br />
-        декор стало возможным!
-      </h2>
-    </div>
-    <ul
-      class="mx-auto mt-[50px] flex flex-wrap justify-center gap-x-7 gap-y-[45px] max-sm:hidden"
-    >
-      <li
-        v-for="item in slide"
-        :key="item.imgSrc"
-        class="flex flex-col items-center"
-      >
-        <img :src="item.imgSrc" width="370" height="255" />
-        <span
-          class="mt-[14px] text-center text-[21px]"
-          v-html="item.text"
-        ></span>
-      </li>
-    </ul>
-    <div class="swiper hidden max-sm:block">
-      <ul class="swiper-wrapper mt-4">
-        <li
-          v-for="item in slide"
-          :key="item.text"
-          class="swiper-slide flex flex-col items-center text-center"
-        >
-          <img :src="item.imgSrc" />
-          <span class="mt-[12px] text-cente" v-html="item.text"></span>
-        </li>
-      </ul>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+  <div class="mx-auto px-6">
+    <h2 class="text-center text-[21px] font-bold sm:text-6xl">
+      С Pirilax-Special совместить огнезащиту и
+    </h2>
+    <app-title class="mt-4">декор стало возможным! </app-title>
+    <div class="swiper  swiper-clientage-desktop mt-4">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <nuxt-img
+              format="webp"
+              quality="100"
+              alt="Дом обработанный Pirilax-special"
+              width="545"
+              height="358"
+              src="img/slide/slide-first.png"/>
+          </li>
+          <li class="swiper-slide">
+            <nuxt-img
+              format="webp"
+              quality="100"
+              alt="Дом обработанный Pirilax-special"
+              width="545"
+              height="358"
+              src="img/slide/slide-red.png"/>
+          </li>
+          <li class="swiper-slide">
+            <nuxt-img
+              format="webp"
+              quality="100"
+              alt="Дом обработанный Pirilax-special"
+              width="545"
+              height="358"
+              src="img/slide/slide-black.png"/>
+          </li>
+          <li class="swiper-slide">
+            <nuxt-img
+              format="webp"
+              quality="100"
+              alt="Дом обработанный Pirilax-special"
+              width="545"
+              height="358"
+              src="img/slide/slide-blue.png"/>
+          </li>
+        </ul>
     </div>
   </div>
 </template>
 
 <script>
+import AppTitle from '@/components/global/AppTitle.vue';
+
 export default {
   name: 'AppSlider',
-  data() {
-    return {
-      slide: [
-        { imgSrc: 'img/slide/slide1.png', text: `<p>Фасады, подшивы</p>` },
-        { imgSrc: 'img/slide/slide2.png', text: '<p>Надворные постройки</p>' },
-        { imgSrc: 'img/slide/slide3.png', text: '<p>Террасы, двери, окна</p>' },
-        { imgSrc: 'img/slide/slide4.png', text: '<p>Потолки, стены</p>' },
-        {
-          imgSrc: 'img/slide/slide5.png',
-          text: '<p>Элементы декоративной отделки,<br> предметы интерьера</p>',
-        },
-        {
-          imgSrc: 'img/slide/slide6.png',
-          text: `<p>Полы, лестницы с износостойким<br> покрытием</p>`,
-        },
-      ],
-    }
-  },
+  components: {AppTitle},
   mounted() {
-    /* eslint-disable no-unused-vars */
-    const swiper = new this.$swiper('.swiper', {
-      grabCursor: true,
-      modules: [this.$swiperModules.Navigation, this.$swiperModules.Pagination],
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      spaceBetween: 16,
-    })
+    this.configSlider()
   },
+
+  methods: {
+    initSLider(options, classSwiper) {
+      /* eslint-disable no-unused-vars */
+      const swiper = new this.$swiper(classSwiper, options)
+    },
+    configSlider(b) {
+      const optionsMobile = {
+        navigation: {
+          nextEl: '.swiper-button-next-clientage',
+          prevEl: '.swiper-button-prev-clientage',
+        },
+        grabCursor: true,
+        modules: [this.$swiperModules.Navigation],
+        mousewheel: true,
+      }
+
+      const optionsDesktop = {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next-clientage',
+          prevEl: '.swiper-button-prev-clientage',
+        },
+        grabCursor: true,
+        modules: [this.$swiperModules.Navigation],
+        mousewheel: true,
+      }
+      if (window.innerWidth < 768) {
+        this.initSLider(optionsMobile, '.swiper-clientage-mobile')
+      } else {
+        this.initSLider(optionsDesktop, '.swiper-clientage-desktop')
+      }
+    }
+  }
 }
 </script>
-<style>
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-button-next {
-  font-weight: 900;
-  margin-top: -50px;
-  color: #ffee00;
-  width: 15px;
-}
-.swiper-button-prev {
-  font-weight: 900;
-  margin-top: -50px;
-  color: #ffee00;
-}
-</style>
