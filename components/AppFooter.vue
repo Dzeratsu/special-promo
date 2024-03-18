@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full bg-black py-[16px] text-white">
+  <div class="w-full bg-black py-[16px] text-white text-[12px] sm:text-base">
     <div
-      class="mx-auto max-w-[1170px] text-[16px] leading-[16px] px-2 max-sm:text-center max-sm:px-6"
+      class="mx-auto max-w-[1170px] leading-[16px] px-2 max-sm:text-center max-sm:px-6"
     >
       <p>
         © 2024 ООО «Новейшие Огнезащитные Русские Технологии». Любая перепечатка

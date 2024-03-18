@@ -31,7 +31,7 @@
           class="swiper-slide flex flex-col items-center text-center"
         >
           <img :src="item.imgSrc" />
-          <span class="mt-[12px] text-cente" v-html="item.text"></span>
+          <span class="mt-[12px] text-center" v-html="item.text"></span>
         </li>
       </ul>
       <div class="swiper-button-next"></div>
