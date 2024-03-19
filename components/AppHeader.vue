@@ -5,7 +5,9 @@
     <div class="mx-auto 2xl:max-w-[1380px] lg:max-w-[600]">
       <div class="my-2 flex items-center justify-between">
         <div class="flex items-center lg:gap-x-4 gap-x-2">
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             width="145"
             height="68"
             src="img/logo.png"
@@ -13,7 +15,9 @@
             class="hidden lg:block"
             @click="closeMenu"
           />
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             width="76"
             height="35"
             src="img/logo-mob.png"

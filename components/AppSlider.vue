@@ -16,7 +16,9 @@
         :key="item.imgSrc"
         class="flex flex-col items-center"
       >
-        <img :src="item.imgSrc" width="370" height="255" />
+        <nuxt-img
+          format="webp"
+          quality="100" :src="item.imgSrc" width="370" height="255" />
         <span
           class="mt-[14px] text-center text-[21px]"
           v-html="item.text"
@@ -30,7 +32,9 @@
           :key="item.text"
           class="swiper-slide flex flex-col items-center text-center"
         >
-          <img :src="item.imgSrc" />
+          <nuxt-img
+            format="webp"
+            quality="100" :src="item.imgSrc" />
           <span class="mt-[12px] text-center" v-html="item.text"></span>
         </li>
       </ul>

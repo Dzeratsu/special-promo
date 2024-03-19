@@ -8,14 +8,18 @@
       >
         <div class="sm:w-6/12">
           <div class="flex items-center sm:items-center flex-shrink-1">
-            <img
+            <nuxt-img
+              format="webp"
+              quality="100"
               class="hidden sm:block"
               src="img/ready-icon2.svg"
               width="70"
               height="70"
               alt="#"
             />
-            <img
+            <nuxt-img
+              format="webp"
+              quality="100"
               class="sm:hidden"
               src="img/ready-icon1mob.svg"
               width="48"
@@ -31,7 +35,9 @@
               </li>
             </ul>
           </div>
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="mt-[46px]"
             src="img/ready2.png"
             width="570"
@@ -41,14 +47,18 @@
         </div>
         <div class="max-sm:mt-[36px] sm:w-6/12">
           <div class="flex items-center sm:items-center">
-            <img
+            <nuxt-img
+              format="webp"
+              quality="100"
               class="sm:hidden"
               src="img/ready-icon2mob.svg"
               width="48"
               height="48"
               alt="#"
             />
-            <img
+            <nuxt-img
+              format="webp"
+              quality="100"
               class="hidden sm:block"
               src="img/ready-icon1.svg"
               width="70"
@@ -65,7 +75,9 @@
               </li>
             </ul>
           </div>
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="mt-[46px]"
             src="img/ready1.png"
             width="570"

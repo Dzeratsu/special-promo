@@ -7,14 +7,18 @@
         <div
           class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="sm:hidden"
             src="img/review-mob1.png"
             alt="pirilax-special отзывы"
             width="296"
             height="509"
           />
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="hidden sm:block"
             src="img/review1.png"
             alt="pirilax-special отзывы"
@@ -27,14 +31,18 @@
         <div
           class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="sm:hidden"
             src="img/review-mob2.png"
             alt="pirilax-special отзывы"
             width="296"
             height="300"
           />
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="hidden sm:block"
             src="img/review2.png"
             alt="pirilax-special отзывы"
@@ -47,14 +55,18 @@
         <div
           class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="sm:hidden"
             src="img/review-mob3.png"
             alt="pirilax-special отзывы"
             width="295"
             height="305"
           />
-          <img
+          <nuxt-img
+            format="webp"
+            quality="100"
             class="hidden sm:block"
             src="img/review3.png"
             alt="pirilax-special отзывы"

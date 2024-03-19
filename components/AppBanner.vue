@@ -9,9 +9,9 @@
       height="765"
       class="mx-auto hidden mob:block"
     />
-    <img
-      quality="100"
+    <nuxt-img
       format="webp"
+      quality="100"
       src="img/banner-mob.png"
       alt="pirilax special"
       width="375"

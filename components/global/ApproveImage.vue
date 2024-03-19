@@ -3,14 +3,18 @@
     class="flex items-center gap-2 pt-3 text-base font-semibold leading-[16px] sm:text-[21px] sm:leading-[21px] flex-shrink-1"
   >
     <div class="max-sm:min-w-[40px] min-w-[60px] hidden sm:block">
-      <img
+      <nuxt-img
+        format="webp"
+        quality="100"
         v-if="!white"
         alt="approve"
         src="img/approve.svg"
         width="40"
         height="40"
       />
-      <img
+      <nuxt-img
+        format="webp"
+        quality="100"
         v-else
         alt="approve"
         src="img/approve-white.svg"
@@ -19,14 +23,18 @@
       />
     </div>
     <div class="block sm:hidden max-sm:min-w-[40px] min-w-[60px]">
-      <img
+      <nuxt-img
+        format="webp"
+        quality="100"
         v-if="!white"
         alt="approve"
         src="img/approve.svg"
         width="29"
         height="29"
       />
-      <img
+      <nuxt-img
+        format="webp"
+        quality="100"
         v-else
         alt="approve"
         src="img/approve-white.svg"

@@ -28,14 +28,18 @@
         class="p-[20px] rounded-full callback bg-orange-gr  test callback"
         @click="openPopup"
       >
-        <img
+        <nuxt-img
+          format="webp"
+          quality="100"
           src="img/phone.svg"
           alt="scroll"
           width="31"
           height="31"
           class="text-xl hidden lg:block"
         />
-        <img
+        <nuxt-img
+          format="webp"
+          quality="100"
           src="img/phone.svg"
           alt="scroll"
           width="16"
@@ -48,14 +52,18 @@
         class="p-[20px] rounded-full bg-[#666666] test"
         @click="openPopup"
       >
-        <img
+        <nuxt-img
+          format="webp"
+          quality="100"
           src="img/cross.svg"
           alt="scroll"
           width="31"
           height="31"
           class="text-xl hidden lg:block"
         />
-        <img
+        <nuxt-img
+          format="webp"
+          quality="100"
           src="img/cross.svg"
           alt="scroll"
           width="16"

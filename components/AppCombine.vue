@@ -12,13 +12,17 @@
           class="mx-auto sm:px-6 md:pl-[120px]"
         >
           <div class="mt-6 flex items-start gap-5 lg:mt-5 lg:items-center">
-            <img
+            <nuxt-img
+              format="webp"
+              quality="100"
               :src="`img/${data.img}`"
               width="70"
               height="70"
               class="hidden lg:block"
             />
-            <img
+            <nuxt-img
+              format="webp"
+              quality="100"
               :src="`img/${data.imgMob}`"
               width="47"
               height="47"

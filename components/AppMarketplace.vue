@@ -6,7 +6,9 @@
       <p class="text-[45px] leading-[45px] font-semibold">
         Покупайте <span class="inline lg:block">на маркетплейсах</span>
       </p>
-      <img
+      <nuxt-img
+        format="webp"
+        quality="100"
         src="img/arrow.svg"
         width="117"
         height="46"
@@ -15,16 +17,22 @@
       <div
         class="lg:ml-[105px] flex gap-x-[25px] mt-[25px] lg:mt-0 justify-center"
       >
-        <a href="https://www.wildberries.ru/brands/nort-1091799" target="_blank"
-          ><img src="img/will.png" width="228" height="50"
+        <a href="https://www.wildberries.ru/catalog/0/search.aspx?search=%D0%9F%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81%20%D0%A1%D0%BF%D0%B5%D1%88%D0%BB" target="_blank"
+          ><nuxt-img
+          format="webp"
+          quality="100" src="img/will.png" width="228" height="50"
         /></a>
-        <a href="https://www.ozon.ru/brand/nort-87169131/" target="_blank"
-          ><img src="img/ozon.png" width="177" height="50"
+        <a href="https://www.ozon.ru/search/?from_global=true&text=pirilax+special" target="_blank"
+          ><nuxt-img
+          format="webp"
+          quality="100" src="img/ozon.png" width="177" height="50"
         /></a>
         <a
           href="https://market.yandex.ru/catalog--propitki/18060868/list?hid=16407095&text=%D0%BF%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81&rt=9&was_redir=1&cpa=1&rs=eJwzEgtgrGLl2L7lJfsqRi6Om-9msgkce_SQGQBiQQk7&_redirectCount=1"
           target="_blank"
-          ><img src="img/ya.png" width="242" height="51"
+          ><nuxt-img
+          format="webp"
+          quality="100" src="img/ya.png" width="242" height="51"
         /></a>
       </div>
     </div>
@@ -35,19 +43,25 @@
         </p>
         <div class="flex gap-x-[30px] mt-[19px] justify-center">
           <a
-            href="https://www.wildberries.ru/brands/nort-1091799"
+            href="https://www.wildberries.ru/catalog/0/search.aspx?search=%D0%9F%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81%20%D0%A1%D0%BF%D0%B5%D1%88%D0%BB"
             target="_blank"
           >
-            <img src="img/will-mob.png" width="58" height="58"
+            <nuxt-img
+              format="webp"
+              quality="100" src="img/will-mob.png" width="58" height="58"
           /></a>
-          <a href="https://www.ozon.ru/brand/nort-87169131/" target="_blank">
-            <img src="img/ozon-mob.png" width="58" height="58"
+          <a href="https://www.ozon.ru/search/?from_global=true&text=pirilax+special" target="_blank">
+            <nuxt-img
+              format="webp"
+              quality="100" src="img/ozon-mob.png" width="58" height="58"
           /></a>
           <a
-            href="https://market.yandex.ru/search?was_redir=1&rt=10&rs=eJwdUL0OAWEQvC8iFDRK1YVCo1KJn-SLRqNQKFRyvUqtOeIBiEREiItOc6Ej57iGSuKnklBcRHIqT6BgpplMdmdndjfV9ZXFSATP9nl70S_thRB7oej1PHCY_aP7zv1RCWyA1wzqPVTcIFAdW-ANKI0DlX2gHoPeqaHrvFCRFrhccyqJrjpBRb1RWaV_BbkyBo024OyRnjY9pyvoFe5m0vOBXKe5Q2W5RrdA_yrQWMLTKEFvfFBxQuBuh1hkog9cS3K3Ltxkiw5fJl6ZcrL4DV5t4gNyTs2d3Sd38JiY4OZxG8o0E_28KMzujFMRoscP6ORlcO3Ge6PZH2majhk%2C&suggest_text=%D0%BD%D0%BE%D1%80%D1%82&allowCollapsing=1&local-offers-first=0&glfilter=7893318%3A13323952"
+            href="https://market.yandex.ru/search?suggest_text=%D0%9D%D0%9E%D0%A0%D0%A2&vendorId=13323952&rs=eJxNkD1Iw1AUhd_TommmjDV1uG6COKQVRVMhdBIHFRcXwfjXRUc7uTwoiA7d3FzSVSqI4OIPxkGEjkoHcTA6iJPgIIqTOQcpLofD-S7n3vcK9e45faNVWJmEzvipymsJ_vkc_m4i1aSOJPoADY-YG3h1jVztQuP8RapmFjR4Y34CH5_BJ0OgyT6SsE0_DZV57DUD7K-Bqlv44BRqquNIfthwDJVv7E22r9DcAjUe5xc5c8jmKXRGX-y04KXGLT5oqOHjYV6yx1fs8L2fbLjnW5qg0QHzNn5Ammx74Mwjb3jhPcKZ_ksk5VKnX7L0Df6Dywuf-D-G_QEveeeWDb-lLW901SuujIyVF-y8bVnakVxGMk6Pm11bryxXN7eWCqIGVQfaYv-HRcI-Qp3Top0ut_cPAjn6F-Uem6Y%2C&glfilter=7893318%3A13323952"
             target="_blank"
           >
-            <img src="img/ya-mob.png" width="58" height="58"
+            <nuxt-img
+              format="webp"
+              quality="100" src="img/ya-mob.png" width="58" height="58"
           /></a>
         </div>
       </div>
