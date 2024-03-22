@@ -69,7 +69,10 @@ export default {
   serverMiddleware: {
     '/api': `~/api`,
   },
-
+  robots: {
+    UserAgent: '*',
+    Host: 'https://special.nort-udm.ru',
+  },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxt/image',
