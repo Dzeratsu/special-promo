@@ -57,11 +57,7 @@ module.exports = {
       lg: '1170px',
       // => @media (min-width: 1024px) { ... }
 
-      lp: {'custombp':
-
-          {'raw': '(max-height: 700px),(min-width:995px)'}
-
-      },
+      lp: {'raw': '(max-height: 700px)'},
       xl: '1280px',
       // => @media (min-width: 1280px) { ... }
 

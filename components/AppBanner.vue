@@ -7,7 +7,7 @@
       alt="pirilax special"
       width="1953"
       height="765"
-      class="mx-auto hidden mob:block"
+      class="mx-auto hidden mob:block lp:w-[90%]"
     />
     <nuxt-img
       format="webp"

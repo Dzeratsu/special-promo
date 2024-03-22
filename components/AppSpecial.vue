@@ -16,7 +16,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="hidden sm:block lp:max-w-[320px]"
+            class="hidden sm:block lp:max-w-[320px] max-w-full"
             src="img/special.svg"
             alt="pirilax-special"
             width="414"
