@@ -9,6 +9,7 @@
       <nuxt-img
         format="webp"
         quality="100"
+        alt="arrow"
         src="img/arrow.svg"
         width="117"
         height="46"
@@ -19,12 +20,14 @@
       >
         <a href="https://www.wildberries.ru/catalog/0/search.aspx?search=%D0%9F%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81%20%D0%A1%D0%BF%D0%B5%D1%88%D0%BB" target="_blank"
           ><nuxt-img
+          alt="Купить Pirilax Special на wildberess"
           format="webp"
           quality="100" src="img/will.png" width="228" height="50"
         /></a>
         <a href="https://www.ozon.ru/search/?from_global=true&text=pirilax+special" target="_blank"
           ><nuxt-img
           format="webp"
+          alt="Купить Pirilax Special на ozon"
           quality="100" src="img/ozon.png" width="177" height="50"
         /></a>
         <a
@@ -32,6 +35,7 @@
           target="_blank"
           ><nuxt-img
           format="webp"
+          alt="Купить Pirilax Special на яндекс маркете"
           quality="100" src="img/ya.png" width="242" height="51"
         /></a>
       </div>
@@ -48,11 +52,13 @@
           >
             <nuxt-img
               format="webp"
+              alt="Купить Pirilax Special на wildberess"
               quality="100" src="img/will-mob.png" width="58" height="58"
           /></a>
           <a href="https://www.ozon.ru/search/?from_global=true&text=pirilax+special" target="_blank">
             <nuxt-img
               format="webp"
+              alt="Купить Pirilax Special на ozon"
               quality="100" src="img/ozon-mob.png" width="58" height="58"
           /></a>
           <a
@@ -61,6 +67,7 @@
           >
             <nuxt-img
               format="webp"
+              alt="Купить Pirilax Special на яндекс маркете"
               quality="100" src="img/ya-mob.png" width="58" height="58"
           /></a>
         </div>
