@@ -4,7 +4,7 @@
     class="fixed z-50 left-[70px] bottom-[120px] pointer hidden lg:block"
     @click="scroll"
   >
-    <button class="px-[27px] py-[32px] rounded-full shadowCircle">
+    <button class="px-[22px] py-[19px] rounded-full shadowCircle">
       <nuxt-img
         format="webp"
         quality="100"
