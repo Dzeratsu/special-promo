@@ -15,7 +15,7 @@
               src="img/ready-icon2.svg"
               width="70"
               height="70"
-              alt="#"
+              alt="Защита древесины от огня для наружных работ"
             />
             <nuxt-img
               format="webp"
@@ -24,7 +24,7 @@
               src="img/ready-icon1mob.svg"
               width="48"
               height="48"
-              alt="#"
+              alt="Защита древесины от огня для наружных работ"
             />
             <ul class="ml-[18px] sm:ml-[30px]">
               <li class="text-[16px] font-semibold lg:text-[21px]">
@@ -42,7 +42,7 @@
             src="img/ready2.png"
             width="570"
             height="428"
-            alt="#"
+            alt="Защита древесины от огня для наружных работ"
           />
         </div>
         <div class="max-sm:mt-[36px] sm:w-6/12">
@@ -54,7 +54,7 @@
               src="img/ready-icon2mob.svg"
               width="48"
               height="48"
-              alt="#"
+              alt="Защита древесины от огня для наружных работ"
             />
             <nuxt-img
               format="webp"

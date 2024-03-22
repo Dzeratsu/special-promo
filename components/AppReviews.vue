@@ -12,7 +12,7 @@
             quality="100"
             class="sm:hidden"
             src="img/review-mob1.png"
-            alt="pirilax-special отзывы"
+            alt="pirilax-special защита от огня отзывы"
             width="296"
             height="509"
           />
@@ -21,7 +21,7 @@
             quality="100"
             class="hidden sm:block lp:max-w-[70%]"
             src="img/review1.png"
-            alt="pirilax-special отзывы"
+            alt="pirilax-special защита древесины отзывы"
             width="1024"
             height="628"
           />
@@ -36,7 +36,7 @@
             quality="100"
             class="sm:hidden"
             src="img/review-mob2.png"
-            alt="pirilax-special отзывы"
+            alt="pirilax-special защита отзывы"
             width="296"
             height="300"
           />
@@ -45,7 +45,7 @@
             quality="100"
             class="hidden sm:block lp:max-w-[70%]"
             src="img/review2.png"
-            alt="pirilax-special отзывы"
+            alt="pirilax-special огнезащита отзывы"
             width="1015"
             height="520"
           />
@@ -60,7 +60,7 @@
             quality="100"
             class="sm:hidden"
             src="img/review-mob3.png"
-            alt="pirilax-special отзывы"
+            alt="pirilax-special защищает от огня отзывы"
             width="295"
             height="305"
           />
@@ -69,7 +69,7 @@
             quality="100"
             class="hidden sm:block lp:max-w-[70%]"
             src="img/review3.png"
-            alt="pirilax-special отзывы"
+            alt="pirilax-special можно красить отзывы"
             width="1021"
             height="514"
           />

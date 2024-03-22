@@ -15,6 +15,7 @@
             <nuxt-img
               format="webp"
               quality="100"
+              :alt="`Pirilax Special - ${data.title}`"
               :src="`img/${data.img}`"
               width="70"
               height="70"
@@ -23,6 +24,7 @@
             <nuxt-img
               format="webp"
               quality="100"
+              :alt="`Pirilax Special - ${data.title}`"
               :src="`img/${data.imgMob}`"
               width="47"
               height="47"

@@ -18,6 +18,7 @@
       >
         <nuxt-img
           format="webp"
+          :alt="`Применение Pirilax Special - ${item.text.replace(/<\/?p[^>]*>/g, '')}`"
           class="lp:max-w-[70%]"
           quality="100" :src="item.imgSrc" width="370" height="255" />
         <span
@@ -35,6 +36,7 @@
         >
           <nuxt-img
             format="webp"
+            :alt="`Применение Pirilax Special - ${item.text.replace(/<\/?p[^>]*>/g, '')}`"
             quality="100" :src="item.imgSrc" />
           <span class="mt-[12px] text-center" v-html="item.text"></span>
         </li>
