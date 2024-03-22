@@ -4,7 +4,7 @@
     <div class="mx-auto px-6">
       <app-title>ГОТОВЫЕ КОМПЛЕКСНЫЕ РЕШЕНИЯ</app-title>
       <div
-        class="max-sm:flex-col flex gap-x-[30px] max-sm:mt-[18px] sm:mt-[61px] flex-row-reverse"
+        class="max-sm:flex-col flex gap-x-[30px] max-sm:mt-[18px] 2xl:mt-[61px] lp:mt-[23px] flex-row-reverse"
       >
         <div class="sm:w-6/12">
           <div class="flex items-center sm:items-center flex-shrink-1">
@@ -20,7 +20,7 @@
             <nuxt-img
               format="webp"
               quality="100"
-              class="sm:hidden"
+              class="sm:hidden "
               src="img/ready-icon1mob.svg"
               width="48"
               height="48"
@@ -38,7 +38,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="mt-[46px]"
+            class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
             src="img/ready2.png"
             width="570"
             height="428"
@@ -78,7 +78,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="mt-[46px]"
+            class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
             src="img/ready1.png"
             width="570"
             height="428"
@@ -89,7 +89,7 @@
     </div>
     <AppButton
       link="https://www.nort-udm.ru/mesta-prodazh/"
-      class="sm:mt-[66px] mt-[33px]"
+      class="2xl:mt-[66px] mt-[33px] lp:mt-[15px]"
       >Узнайте, где купить
     </AppButton>
   </section>

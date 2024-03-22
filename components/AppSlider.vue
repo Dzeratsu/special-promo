@@ -2,14 +2,14 @@
   <div>
     <div class="mx-auto px-6">
       <h2
-        class="text-transform: text-center text-[21px] font-bold uppercase sm:text-6xl"
+        class="text-transform: text-center text-[21px] font-bold uppercase lp:text-4xl 2xl:text-6xl"
       >
         С Pirilax®-Special совместить огнезащиту и <br />
         декор стало возможным!
       </h2>
     </div>
     <ul
-      class="mx-auto mt-[50px] flex flex-wrap justify-center gap-x-7 gap-y-[45px] max-sm:hidden"
+      class="mx-auto mt-[50px] lp:mt-[25px] flex flex-wrap justify-center gap-x-7 gap-y-[45px] lp:gap-x-[10px] lp:gap-y-[15px] max-sm:hidden"
     >
       <li
         v-for="item in slide"
@@ -18,6 +18,7 @@
       >
         <nuxt-img
           format="webp"
+          class="lp:max-w-[70%]"
           quality="100" :src="item.imgSrc" width="370" height="255" />
         <span
           class="mt-[14px] text-center text-[21px]"

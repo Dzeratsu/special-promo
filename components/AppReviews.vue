@@ -3,7 +3,7 @@
     <span id="reviews" class="block absolute -mt-32 lg:-mt-24"></span>
     <div class="mx-auto px-6">
       <app-title>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</app-title>
-      <article class="mt-[25px] sm:mt-[61px]">
+      <article class="mt-[25px]  lp:mt-[16px] 2xl:mt-[61px]">
         <div
           class="flex items-center justify-center rounded-[10px] px-2 py-4 shadow-review-shadow bg-white"
         >
@@ -19,7 +19,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="hidden sm:block"
+            class="hidden sm:block lp:max-w-[70%]"
             src="img/review1.png"
             alt="pirilax-special отзывы"
             width="1024"
@@ -43,7 +43,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="hidden sm:block"
+            class="hidden sm:block lp:max-w-[70%]"
             src="img/review2.png"
             alt="pirilax-special отзывы"
             width="1015"
@@ -67,7 +67,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="hidden sm:block"
+            class="hidden sm:block lp:max-w-[70%]"
             src="img/review3.png"
             alt="pirilax-special отзывы"
             width="1021"

@@ -2,7 +2,7 @@
   <section>
     <span id="about" class="block absolute -mt-32 lg:-mt-24"></span>
     <div class="mx-auto px-6 py-[27px] sm:my-[80px]">
-      <h2 class="text-center text-[21px] font-bold sm:text-6xl uppercase">
+      <h2 class="text-center text-[21px] font-bold lp:text-4xl 2xl:text-6xl uppercase">
         Уникальный
         <span class="max-sm:block"
           >огнебиозащитный состав,
@@ -16,7 +16,7 @@
           <nuxt-img
             format="webp"
             quality="100"
-            class="hidden sm:block"
+            class="hidden sm:block lp:max-w-[320px]"
             src="img/special.svg"
             alt="pirilax-special"
             width="414"

@@ -2,7 +2,7 @@
   <section>
     <span id="property" class="block absolute -mt-32 lg:-mt-24"></span>
     <div class="mx-auto px-6">
-      <h2 class="text-center text-[21px] font-bold sm:text-6xl">
+      <h2 class="text-center text-[21px] font-bold lp:text-4xl 2xl:text-6xl">
         СОЧЕТАЕТ ЛУЧШИЕ СВОЙСТВА И НАДЕЖНОСТЬ СОСТАВОВ PIRILAX
       </h2>
       <div class="mx-auto mt-5 max-sm:px-0 max-sm:leading-4 lg:px-6">
@@ -38,7 +38,7 @@
         <client-only>
           <article class="mx-auto mt-[41px] lg:mt-[80px]">
             <iframe
-              class="h-[200px] md:h-[631px]"
+              class="h-[200px] md:h-[631px] lp:max-h-[500px]"
               width="100%"
               height="631"
               src="https://www.youtube.com/embed/DGeixKJ-DcM?si=8Bfq9aWkK6Q5shcK"
