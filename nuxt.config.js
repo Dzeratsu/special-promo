@@ -42,7 +42,7 @@ export default {
       },
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.png' },
     ],
-    title: 'PIRILAX®-special - уникальный огнебиозащитный состав для древесины, под лаки и краски ',
+    title: '«Pirilax»-Special - уникальный огнебиозащитный состав для древесины, под лаки и краски ',
     htmlAttrs: {
       lang: 'en',
     },
