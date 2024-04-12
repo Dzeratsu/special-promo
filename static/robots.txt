@@ -1,2 +1,4 @@
 User-Agent: *
 Host: https://special.nort-udm.ru
+
+Sitemap: https://special.nort-udm.ru/sitemap.xml
