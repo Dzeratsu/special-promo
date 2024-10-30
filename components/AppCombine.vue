@@ -43,7 +43,7 @@
               class="h-[200px] md:h-[631px] lp:max-h-[500px]"
               width="100%"
               height="631"
-              src="https://www.youtube.com/embed/DGeixKJ-DcM?si=8Bfq9aWkK6Q5shcK"
+              src="https://vk.com/video_ext.php?oid=-117164278&id=456239079&hd=2&autoplay=1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
