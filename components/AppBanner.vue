@@ -3,7 +3,7 @@
     <nuxt-img
       quality="100"
       format="webp"
-      src="img/banner.png"
+      src="img/banner.jpg"
       alt="pirilax special"
       width="1953"
       height="765"
@@ -12,7 +12,7 @@
     <nuxt-img
       format="webp"
       quality="100"
-      src="img/banner-mob.png"
+      src="img/banner-mob.jpg"
       alt="pirilax special"
       width="375"
       height="213"
