@@ -18,6 +18,7 @@
     <AppScrollToTo />
     <AppPhone />
     <AppMarketplace class="max-w-[1170px] mx-auto" />
+    <AppVk />
     <AppFooter />
   </main>
 </template>
