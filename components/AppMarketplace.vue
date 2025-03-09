@@ -18,19 +18,13 @@
       <div
         class="lg:ml-[105px] flex gap-x-[25px] mt-[25px] lg:mt-0 justify-center"
       >
-        <a href="https://www.wildberries.ru/catalog/0/search.aspx?search=%D0%9F%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81%20%D0%A1%D0%BF%D0%B5%D1%88%D0%BB" target="_blank"
-          ><nuxt-img
-          alt="Купить Pirilax Special на wildberess"
-          format="webp"
-          quality="100" src="img/will.png" width="228" height="50"
-        /></a>
-        <a href="https://www.ozon.ru/search/?from_global=true&text=pirilax+special" target="_blank"
+                <a href="https://www.ozon.ru/search/?from_global=true&text=pirilax+special" target="_blank"
           ><nuxt-img
           format="webp"
           alt="Купить Pirilax Special на ozon"
           quality="100" src="img/ozon.png" width="177" height="50"
         /></a>
-        <a
+              <a
           href="https://market.yandex.ru/catalog--propitki/18060868/list?hid=16407095&text=%D0%BF%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81&rt=9&was_redir=1&cpa=1&rs=eJwzEgtgrGLl2L7lJfsqRi6Om-9msgkce_SQGQBiQQk7&_redirectCount=1"
           target="_blank"
           ><nuxt-img
@@ -38,6 +32,14 @@
           alt="Купить Pirilax Special на яндекс маркете"
           quality="100" src="img/ya.png" width="242" height="51"
         /></a>
+        <a href="https://www.wildberries.ru/catalog/0/search.aspx?search=%D0%9F%D0%B8%D1%80%D0%B8%D0%BB%D0%B0%D0%BA%D1%81%20%D0%A1%D0%BF%D0%B5%D1%88%D0%BB" target="_blank"
+          ><nuxt-img
+          alt="Купить Pirilax Special на wildberess"
+          format="webp"
+          quality="100" src="img/will.png" width="228" height="50"
+        /></a>
+
+  
       </div>
     </div>
     <div>
