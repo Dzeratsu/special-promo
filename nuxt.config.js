@@ -19,8 +19,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { hid: 'yandex-verification', name: 'yandex-verification', content: 'e853e633f92526f0' },
-      { hid: 'yandex-verification-d1e4', name: 'yandex-verification', content: 'd1e4792779ca67d4' },
+      { hid: 'yandex-verification', name: 'yandex-verification', content: 'd1e4792779ca67d4' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
@@ -114,12 +113,10 @@ export default {
         ]
       },
     },
-    optimization: {
-      splitChunks: {
-        layouts: true,
-        pages: true,
-        commons: true,
-      },
+    splitChunks: {
+      layouts: true,
+      pages: true,
+      commons: true,
     },
   },
   render: {
