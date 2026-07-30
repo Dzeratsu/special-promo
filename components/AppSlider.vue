@@ -22,9 +22,9 @@
           <img
             :src="`/img/slide/${item.img}.jpg`"
             :alt="`Применение Pirilax Special — ${item.alt}`"
-            class="lp:max-w-[70%]"
-            width="370"
-            height="255"
+            class="h-auto lp:max-w-[70%]"
+            :width="item.w"
+            :height="item.h"
             loading="lazy"
             decoding="async"
           />
@@ -49,8 +49,9 @@
             <img
               :src="`/img/slide/${item.img}.jpg`"
               :alt="`Применение Pirilax Special — ${item.alt}`"
-              width="370"
-              height="255"
+              class="h-auto"
+              :width="item.w"
+              :height="item.h"
               loading="lazy"
               decoding="async"
             />
@@ -63,8 +64,16 @@
           </span>
         </li>
       </ul>
-      <div class="swiper-button-next" aria-label="Следующий слайд"></div>
-      <div class="swiper-button-prev" aria-label="Предыдущий слайд"></div>
+      <button
+        type="button"
+        class="swiper-button-next"
+        aria-label="Следующий слайд"
+      ></button>
+      <button
+        type="button"
+        class="swiper-button-prev"
+        aria-label="Предыдущий слайд"
+      ></button>
     </div>
   </section>
 </template>
@@ -83,26 +92,36 @@ export default {
           img: 'slide1',
           alt: 'Фасады, подшивы',
           lines: ['Фасады, подшивы'],
+          w: 620,
+          h: 404,
         },
         {
           img: 'slide2',
           alt: 'Надворные постройки',
           lines: ['Надворные постройки'],
+          w: 620,
+          h: 404,
         },
         {
           img: 'slide3',
           alt: 'Террасы, двери, окна',
           lines: ['Террасы (кроме пола), двери, окна'],
+          w: 370,
+          h: 255,
         },
         {
           img: 'slide4',
           alt: 'Потолки, стены',
           lines: ['Потолки, стены'],
+          w: 620,
+          h: 404,
         },
         {
           img: 'slide5',
           alt: 'Элементы декоративной отделки',
           lines: ['Элементы декоративной отделки,', 'предметы интерьера'],
+          w: 620,
+          h: 405,
         },
         {
           img: 'slide6',
@@ -111,6 +130,8 @@ export default {
             'Полы и лестницы',
             '(с последующим нанесением износостойкого покрытия)',
           ],
+          w: 370,
+          h: 255,
         },
       ],
     }
@@ -121,6 +142,7 @@ export default {
     if (!el) return
     this.swiperInstance = new this.$swiper(el, {
       grabCursor: true,
+      a11y: false,
       modules: [
         this.$swiperModules.Navigation,
         this.$swiperModules.Pagination,
@@ -160,15 +182,14 @@ export default {
   height: auto;
   object-fit: cover;
 }
-.swiper-button-next {
-  font-weight: 900;
-  margin-top: -50px;
-  color: #ffee00;
-  width: 15px;
-}
+.swiper-button-next,
 .swiper-button-prev {
   font-weight: 900;
   margin-top: -50px;
   color: #ffee00;
+  width: 15px;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 </style>

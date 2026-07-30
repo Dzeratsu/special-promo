@@ -36,10 +36,10 @@
           <picture>
             <source srcset="/img/ready2.webp" type="image/webp" />
             <img
-              class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
+              class="mt-[46px] h-auto w-full lp:mt-[16px] lp:max-w-[80%]"
               src="/img/ready2.jpg"
-              width="570"
-              height="428"
+              width="658"
+              height="684"
               alt="Комплекс для внутренних работ"
               loading="lazy"
               decoding="async"
@@ -77,10 +77,10 @@
           <picture>
             <source srcset="/img/ready1.webp" type="image/webp" />
             <img
-              class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
+              class="mt-[46px] h-auto w-full lp:mt-[16px] lp:max-w-[80%]"
               src="/img/ready1.jpg"
-              width="570"
-              height="428"
+              width="658"
+              height="684"
               alt="Комплекс для наружных работ"
               loading="lazy"
               decoding="async"

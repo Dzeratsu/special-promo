@@ -18,9 +18,9 @@
             <img
               src="/img/special.jpg"
               alt="Pirilax Special"
-              width="414"
-              height="373"
-              class="max-w-full"
+              width="828"
+              height="746"
+              class="h-auto max-w-full"
               loading="lazy"
               decoding="async"
             />
@@ -30,8 +30,9 @@
             <img
               src="/img/special_mob.jpg"
               alt="Pirilax Special"
-              width="260"
-              height="234"
+              width="520"
+              height="468"
+              class="h-auto"
               loading="lazy"
               decoding="async"
             />
