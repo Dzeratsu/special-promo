@@ -16,5 +16,6 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           script_stop: true
+          command_timeout: 30m
           script: |
-            /var/www/pirilax-special/deploy.sh
+            bash /var/www/pirilax-special/deploy.sh

@@ -7,6 +7,7 @@ IMAGE=pirilax-special:latest
 NAME=pirilax-special
 LOG=/var/log/pirilax-special-deploy.log
 
+mkdir -p "$(dirname "$LOG")"
 exec >>"$LOG" 2>&1
 echo "===== $(date -Is) deploy start ====="
 
@@ -17,9 +18,20 @@ if [[ ! -f .env ]]; then
   exit 1
 fi
 
+# Preserve env across hard reset (untracked, but keep a backup anyway)
+cp -a .env /tmp/pirilax-special.env.deploy
+
 git fetch origin "$BRANCH"
-git checkout -B "$BRANCH" "origin/$BRANCH"
+# Already on production after first setup; force sync without checkout conflicts
+git checkout -f -B "$BRANCH" "origin/$BRANCH"
 git reset --hard "origin/$BRANCH"
+git clean -fd -e .env -e .env.example
+
+# Restore env if somehow removed
+if [[ ! -f .env ]]; then
+  cp -a /tmp/pirilax-special.env.deploy .env
+  chmod 600 .env
+fi
 
 echo "Building image..."
 docker build -f dockerfile -t "$IMAGE" .
@@ -34,7 +46,7 @@ docker run -d \
   "$IMAGE"
 
 echo "Health check..."
-sleep 3
+sleep 5
 docker ps --filter "name=$NAME" --format '{{.Names}} {{.Status}}'
 curl -fsS -o /dev/null -w 'HTTP %{http_code}\n' http://127.0.0.1:3000/ || true
 
