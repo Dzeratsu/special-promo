@@ -13,7 +13,7 @@
       </p>
       <p>
         Бесплатная линия
-        <a href="tel:88002509017" class="underline">8 (800)-250-90-17</a>,
+        <a href="tel:88006009998" class="underline">8 (800)-600-999-9</a>,
         <span class="max-sm:block">
           е-mail:
           <a href="mailto:special@ooonort.ru" class="underline"

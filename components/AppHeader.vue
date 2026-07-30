@@ -32,7 +32,7 @@
               <a href="mailto:special@ooonort.ru" class="underline">special@ooonort.ru</a>
             </p>
             <p class="font-semibold">
-              <a href="tel:88002509017" class="underline">8 (800) 250 90 17</a>
+              <a href="tel:8806009998" class="underline">8 (800) 600 999 8</a>
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { Request, Response, Router } from 'express'
 import responseStatus from '../enum/response-status'
-import sendMail from '../services/send-mail'
+import sendLead from '../services/send-mail'
 import exception from '../exception/exception'
 import responseObj from '../libs/response'
 import recaptcha from '../middleware/recaptcha'
@@ -11,9 +11,10 @@ export const router = Router()
   router.get('/', (req: Request, res: Response) => {
     res.send('I am ok..')
   })
-  router.post('/create-lead', recaptcha, async (req: Request, res: Response) => {
+  router.post('/create-lead', async (req: Request, res: Response) => {
     try {
-      await sendMail(req.body)
+      await sendLead(req.body)
+
       res
         .status(responseStatus.CREATE)
         .send(responseObj('Вопрос успешно отправлен'))

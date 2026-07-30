@@ -39,7 +39,7 @@
         </div>
       </div>
       <AppButton
-        link="https://www.nort-udm.ru/upload/iblock/7c8/7c8fc24437f027de5f3fc7a5fa3bb413.pdf"
+        link="https://www.nort-udm.ru/upload/iblock/6b8/6b80f525a1086ef2d4d3182fb46bc53e.pdf"
         class="mt-[39px]"
       >
         <div class="flex items-center justify-center gap-4">

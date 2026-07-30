@@ -3,17 +3,23 @@ import message from '../enum/message'
 import * as dotenv from 'dotenv'
 dotenv.config()
 
+const user = process.env.SMTP_USER
+const pass = process.env.SMTP_PASS
+
+if (!user || !pass) {
+  throw new Error('SMTP_USER and SMTP_PASS must be set in environment')
+}
+
 const config = {
-  service: 'gmail',
-  host: 'smtp.gmail.com',
-  secure: false,
+  host: process.env.SMTP_HOST || 'smtp.yandex.ru',
+  secure: process.env.SMTP_SECURE !== 'false',
   tls: {
     rejectUnauthorized: false,
   },
-  port: 587,
+  port: Number(process.env.SMTP_PORT || 465),
   auth: {
-    user: 'tehnop18@gmail.com',
-    pass: "gqaa vvsq apfz oeuy"
+    user,
+    pass,
   },
 }
 

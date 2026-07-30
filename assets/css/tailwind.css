@@ -25,6 +25,10 @@
     height: 0;
   }
 
+  .p-5 {
+    margin-top: 7rem;
+  }
+
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus input:-webkit-autofill,

@@ -1,5 +1,5 @@
 // eslint-disable-next-line camelcase
-const { SITE_KEY } = process.env
+const { NUXT_ENV_SMARTCAPTCHA_SITE_KEY } = process.env
 export default {
   targer: 'server',
   eslint: {
@@ -56,6 +56,12 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Pirilax огнебиозащтный состав для древесины, защищает древесину от огня, плесени, совместим с лаками и красками' },
       { name: 'format-detection', content: 'telephone=no' },
+    ],
+    script: [
+      {
+        src: 'https://smartcaptcha.cloud.yandex.ru/captcha.js',
+        defer: true
+      }
     ],
   },
 
@@ -117,7 +123,7 @@ export default {
   image: {},
   recaptcha: {
     hideBadge: true,
-    siteKey: SITE_KEY,
+    siteKey: NUXT_ENV_SMARTCAPTCHA_SITE_KEY,
     version: 2,
     size: 'invisible',
   },
