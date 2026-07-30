@@ -34,7 +34,7 @@
               >
             </p>
             <p class="font-semibold">
-              <a href="tel:8806009998" class="underline">8 (800) 600 999 8</a>
+              <a href="tel:88006009998" class="underline">8 (800) 600 999 8</a>
             </p>
           </div>
         </div>
