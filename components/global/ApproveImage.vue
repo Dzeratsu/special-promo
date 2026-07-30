@@ -1,48 +1,44 @@
 <template>
   <div
-    class="flex items-center gap-2 pt-3 text-base font-semibold leading-[16px] sm:text-[21px] sm:leading-[21px] flex-shrink-1"
+    class="flex flex-shrink-1 items-center gap-2 pt-3 text-base font-semibold leading-[16px] sm:text-[21px] sm:leading-[21px]"
   >
-    <div class="max-sm:min-w-[40px] min-w-[60px] hidden sm:block">
-      <nuxt-img
-        format="webp"
-        quality="100"
+    <div class="hidden min-w-[60px] sm:block max-sm:min-w-[40px]">
+      <img
         v-if="!white"
-        alt="approve"
-        src="img/approve.svg"
+        src="/img/approve.svg"
+        alt=""
         width="40"
         height="40"
+        aria-hidden="true"
       />
-      <nuxt-img
-        format="webp"
-        quality="100"
+      <img
         v-else
-        alt="approve"
-        src="img/approve-white.svg"
+        src="/img/approve-white.svg"
+        alt=""
         width="40"
         height="40"
+        aria-hidden="true"
       />
     </div>
-    <div class="block sm:hidden max-sm:min-w-[40px] min-w-[60px]">
-      <nuxt-img
-        format="webp"
-        quality="100"
+    <div class="block min-w-[60px] sm:hidden max-sm:min-w-[40px]">
+      <img
         v-if="!white"
-        alt="approve"
-        src="img/approve.svg"
+        src="/img/approve.svg"
+        alt=""
         width="29"
         height="29"
+        aria-hidden="true"
       />
-      <nuxt-img
-        format="webp"
-        quality="100"
+      <img
         v-else
-        alt="approve"
-        src="img/approve-white.svg"
+        src="/img/approve-white.svg"
+        alt=""
         width="29"
         height="29"
+        aria-hidden="true"
       />
     </div>
-    <p class="lg:text-[21px] text-[16px]"><slot /></p>
+    <p class="text-[16px] lg:text-[21px]"><slot /></p>
   </div>
 </template>
 
@@ -52,7 +48,7 @@ export default {
   props: {
     white: {
       type: Boolean,
-      require: false,
+      required: false,
       default: false,
     },
   },

@@ -1,42 +1,51 @@
 <template>
-  <div
-    v-if="$store.state.positionY > 750"
-    class="fixed z-50 left-[70px] bottom-[120px] pointer hidden lg:block"
-    @click="scroll"
+  <aside
+    v-show="visible"
+    class="pointer fixed bottom-[120px] left-[70px] z-50 hidden lg:block"
+    aria-label="Навигация по странице"
   >
-    <button class="px-[22px] py-[19px] rounded-full shadowCircle">
-      <nuxt-img
-        format="webp"
-        quality="100"
-        src="img/scroll.svg"
-        alt="scroll"
-        width="18"
-        height="30"
-        class="text-xl"
+    <button
+      type="button"
+      class="shadowCircle flex h-[62px] w-[62px] items-center justify-center rounded-full bg-white"
+      aria-label="Прокрутить наверх"
+      @click="scrollToTop"
+    >
+      <img
+        src="/img/scroll.svg"
+        alt=""
+        width="32"
+        height="20"
+        class="block"
+        aria-hidden="true"
       />
     </button>
-  </div>
+  </aside>
 </template>
+
 <script>
 export default {
-  name: 'AppScrollToTo',
+  name: 'AppScrollToTop',
   data: () => ({
-    scroolBoolean: false,
+    visible: false,
   }),
   mounted() {
-    window.addEventListener('scroll', this.setPosition)
+    this.updateVisibility()
+    window.addEventListener('scroll', this.updateVisibility, { passive: true })
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.updateVisibility)
   },
   methods: {
-    scroll() {
-      this.scroolBoolean = 123
-      window.scrollTo(0, 0)
+    updateVisibility() {
+      this.visible = window.scrollY > 750
     },
-    setPosition() {
-      this.$store.commit('setPositionY', window.scrollY)
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     },
   },
 }
 </script>
+
 <style>
 .shadowCircle {
   box-shadow: 0 0 10px 0 rgb(9 6 12 / 10%);

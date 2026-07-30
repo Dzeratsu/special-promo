@@ -8,23 +8,21 @@
       >
         <div class="sm:w-6/12">
           <div class="flex items-center sm:items-center flex-shrink-1">
-            <nuxt-img
-              format="webp"
-              quality="100"
+            <img
               class="hidden sm:block"
-              src="img/ready-icon2.svg"
+              src="/img/ready-icon2.svg"
               width="70"
               height="70"
-              alt="Защита древесины от огня для наружных работ"
+              alt=""
+              aria-hidden="true"
             />
-            <nuxt-img
-              format="webp"
-              quality="100"
-              class="sm:hidden "
-              src="img/ready-icon1mob.svg"
+            <img
+              class="sm:hidden"
+              src="/img/ready-icon1mob.svg"
               width="48"
               height="48"
-              alt="Защита древесины от огня для наружных работ"
+              alt=""
+              aria-hidden="true"
             />
             <ul class="ml-[18px] sm:ml-[30px]">
               <li class="text-[16px] font-semibold lg:text-[21px]">
@@ -47,23 +45,21 @@
         </div>
         <div class="max-sm:mt-[36px] sm:w-6/12">
           <div class="flex items-center sm:items-center">
-            <nuxt-img
-              format="webp"
-              quality="100"
+            <img
               class="sm:hidden"
-              src="img/ready-icon2mob.svg"
+              src="/img/ready-icon2mob.svg"
               width="48"
               height="48"
-              alt="Защита древесины от огня для наружных работ"
+              alt=""
+              aria-hidden="true"
             />
-            <nuxt-img
-              format="webp"
-              quality="100"
+            <img
               class="hidden sm:block"
-              src="img/ready-icon1.svg"
+              src="/img/ready-icon1.svg"
               width="70"
               height="70"
-              alt="#"
+              alt=""
+              aria-hidden="true"
             />
             <ul class="ml-[18px] sm:ml-[30px]">
               <li class="text-[16px] font-semibold lg:text-[21px]">

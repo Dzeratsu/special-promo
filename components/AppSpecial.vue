@@ -13,20 +13,16 @@
         <div
           class="mt-5 flex flex-col items-center md:flex-row sm:justify-center sm:gap-[57px]"
         >
-          <nuxt-img
-            format="webp"
-            quality="100"
-            class="hidden sm:block lp:max-w-[320px] max-w-full"
-            src="img/special.svg"
-            alt="pirilax-special"
+          <img
+            class="hidden max-w-full sm:block lp:max-w-[320px]"
+            src="/img/special.svg"
+            alt="Pirilax Special"
             width="414"
             height="373"
           />
-          <nuxt-img
-            format="webp"
-            quality="100"
-            src="img/special_mob.svg"
-            alt="pirilax-special-mob"
+          <img
+            src="/img/special_mob.svg"
+            alt="Pirilax Special"
             width="260"
             height="234"
             class="sm:hidden"
@@ -44,9 +40,7 @@
       >
         <div class="flex items-center justify-center gap-4">
           <span>Инструкция</span>
-          <nuxt-img
-            format="webp"
-            quality="100" src="img/load.svg" width="23" height="23" alt="load" />
+          <img src="/img/load.svg" width="23" height="23" alt="" aria-hidden="true" />
         </div>
       </AppButton>
     </div>

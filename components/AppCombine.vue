@@ -12,20 +12,16 @@
           class="mx-auto sm:px-6 md:pl-[120px]"
         >
           <div class="mt-6 flex items-start gap-5 lg:mt-5 lg:items-center">
-            <nuxt-img
-              format="webp"
-              quality="100"
-              :alt="`Pirilax Special - ${data.title}`"
-              :src="`img/${data.img}`"
+            <img
+              :alt="`Pirilax Special — ${data.title}`"
+              :src="`/img/${data.img}`"
               width="70"
               height="70"
               class="hidden lg:block"
             />
-            <nuxt-img
-              format="webp"
-              quality="100"
-              :alt="`Pirilax Special - ${data.title}`"
-              :src="`img/${data.imgMob}`"
+            <img
+              :alt="`Pirilax Special — ${data.title}`"
+              :src="`/img/${data.imgMob}`"
               width="47"
               height="47"
               class="mt-1 lg:hidden"

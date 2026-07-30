@@ -1,22 +1,32 @@
 <template>
-  <div class=" w-full bg-[#0077FF] min-h-[123px]">
-    <div class="mx-auto max-w-[1170px] py-[33px] px-4 lg:px-0">
-    <div class="flex  flex-col lg:flex-row items-center lg:gap-[90px]">
-      <div class="text-white text-[16px] lg:text-[25px] lg:leading-[30px] font-semibold items-center align-middle">
-        Наша группа ВКонтакте — <br>
-        узнайте больше о производителе профессиональных составов для дерева!
+  <aside class="min-h-[123px] w-full bg-[#0077FF]" aria-label="ВКонтакте">
+    <div class="mx-auto max-w-[1170px] px-4 py-[33px] lg:px-0">
+      <div class="flex flex-col items-center lg:flex-row lg:gap-[90px]">
+        <p
+          class="align-middle text-[16px] font-semibold text-white lg:text-[25px] lg:leading-[30px]"
+        >
+          Наша группа ВКонтакте — <br />
+          узнайте больше о производителе профессиональных составов для дерева!
+        </p>
+        <a
+          href="https://vk.com/ooonort"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 block max-sm:w-full lg:mt-0"
+        >
+          <span
+            class="flex h-[42px] w-full items-center justify-center rounded-[10px] bg-white text-center text-[16px] font-semibold text-black hover:shadow-xl lg:w-[230px] lg:text-[18px]"
+          >
+            Перейти
+          </span>
+        </a>
       </div>
-      <a href="https://vk.com/ooonort" target="_blank" class="block max-sm:w-full">
-      <div class="mt-6 lg:mt-0 bg-white rounded-[10px] w-full lg:w-[230px] h-[42px] align-middle text-center text-black  text-[16px] lg:text-[18px] font-semibold flex items-center justify-center hover:shadow-xl">
-        Перейти
-      </div>
-      </a>
     </div>
-    </div>
-  </div>
+  </aside>
 </template>
+
 <script>
 export default {
-  name: 'AppVk'
+  name: 'AppVk',
 }
 </script>

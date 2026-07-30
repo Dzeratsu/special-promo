@@ -1,11 +1,12 @@
 <template>
-  <div class="w-full bg-black py-[16px] text-white text-[12px] sm:text-base">
+  <footer class="w-full bg-black py-[16px] text-[12px] text-white sm:text-base">
     <div
-      class="mx-auto max-w-[1170px] leading-[16px] px-2 max-sm:text-center max-sm:px-6"
+      class="mx-auto max-w-[1170px] px-2 leading-[16px] max-sm:px-6 max-sm:text-center"
     >
       <p>
-        © 2024 ООО «Новейшие Огнезащитные Русские Технологии». Любая перепечатка
-        материала сайта без письменного согласования правообладателя запрещена.
+        © {{ year }} ООО «Новейшие Огнезащитные Русские Технологии». Любая
+        перепечатка материала сайта без письменного согласования правообладателя
+        запрещена.
       </p>
       <p>
         Все названия продукции на сайте являются зарегистрированными товарными
@@ -22,10 +23,17 @@
         >
       </p>
     </div>
-  </div>
+  </footer>
 </template>
+
 <script>
 export default {
   name: 'AppFooter',
+  computed: {
+    // Fixed year avoids SSR/client clock mismatch hydration issues
+    year() {
+      return 2026
+    },
+  },
 }
 </script>
