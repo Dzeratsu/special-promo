@@ -15,21 +15,21 @@
       <li
         v-for="item in slides"
         :key="item.img"
-        class="flex flex-col items-center"
+        class="flex w-[370px] max-w-full flex-col items-center"
       >
-        <picture>
+        <picture class="block w-full">
           <source :srcset="`/img/slide/${item.img}.webp`" type="image/webp" />
           <img
             :src="`/img/slide/${item.img}.jpg`"
             :alt="`Применение Pirilax Special — ${item.alt}`"
-            class="h-auto lp:max-w-[70%]"
-            :width="item.w"
-            :height="item.h"
+            class="slide-img h-[255px] w-full object-cover"
+            width="370"
+            height="255"
             loading="lazy"
             decoding="async"
           />
         </picture>
-        <span class="mt-[14px] text-center text-[14px]">
+        <span class="mt-[14px] min-h-[42px] text-center text-[14px]">
           <template v-for="(line, i) in item.lines">
             <br v-if="i > 0" :key="'br-' + i" />
             <span :key="'t-' + i">{{ line }}</span>
@@ -44,19 +44,19 @@
           :key="'m-' + item.img"
           class="swiper-slide flex flex-col items-center text-center"
         >
-          <picture>
+          <picture class="block w-full px-4">
             <source :srcset="`/img/slide/${item.img}.webp`" type="image/webp" />
             <img
               :src="`/img/slide/${item.img}.jpg`"
               :alt="`Применение Pirilax Special — ${item.alt}`"
-              class="h-auto"
-              :width="item.w"
-              :height="item.h"
+              class="slide-img mx-auto h-auto w-full max-w-[370px] object-cover"
+              width="370"
+              height="255"
               loading="lazy"
               decoding="async"
             />
           </picture>
-          <span class="mt-[12px] text-center">
+          <span class="mt-[12px] px-4 text-center">
             <template v-for="(line, i) in item.lines">
               <br v-if="i > 0" :key="'mbr-' + i" />
               <span :key="'mt-' + i">{{ line }}</span>
@@ -92,36 +92,26 @@ export default {
           img: 'slide1',
           alt: 'Фасады, подшивы',
           lines: ['Фасады, подшивы'],
-          w: 620,
-          h: 404,
         },
         {
           img: 'slide2',
           alt: 'Надворные постройки',
           lines: ['Надворные постройки'],
-          w: 620,
-          h: 404,
         },
         {
           img: 'slide3',
           alt: 'Террасы, двери, окна',
           lines: ['Террасы (кроме пола), двери, окна'],
-          w: 370,
-          h: 255,
         },
         {
           img: 'slide4',
           alt: 'Потолки, стены',
           lines: ['Потолки, стены'],
-          w: 620,
-          h: 404,
         },
         {
           img: 'slide5',
           alt: 'Элементы декоративной отделки',
           lines: ['Элементы декоративной отделки,', 'предметы интерьера'],
-          w: 620,
-          h: 405,
         },
         {
           img: 'slide6',
@@ -130,8 +120,6 @@ export default {
             'Полы и лестницы',
             '(с последующим нанесением износостойкого покрытия)',
           ],
-          w: 370,
-          h: 255,
         },
       ],
     }
@@ -176,12 +164,6 @@ export default {
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 .swiper-button-next,
 .swiper-button-prev {
   font-weight: 900;
