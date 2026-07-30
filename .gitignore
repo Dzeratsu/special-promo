@@ -89,3 +89,8 @@ sw.*
 
 # Vim swap files
 *.swp
+
+.deploy-tmp/
+api/
+components/text.html
+special.nort-udm.ru
