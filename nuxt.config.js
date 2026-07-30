@@ -3,7 +3,6 @@ const { NUXT_ENV_SMARTCAPTCHA_SITE_KEY } = process.env
 
 export default {
   target: 'server',
-  modern: 'client',
   eslint: {
     fix: true,
   },
@@ -19,7 +18,11 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { hid: 'yandex-verification', name: 'yandex-verification', content: 'd1e4792779ca67d4' },
+      {
+        hid: 'yandex-verification',
+        name: 'yandex-verification',
+        content: 'd1e4792779ca67d4',
+      },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
@@ -31,7 +34,6 @@ export default {
       { name: 'theme-color', content: '#ffffff' },
     ],
     link: [
-      // Only preload the primary text font — preloading all 4 competed with LCP
       {
         rel: 'preload',
         href: '/fonts/MyriadPro-Regular.woff',
@@ -57,7 +59,6 @@ export default {
     ],
   },
 
-  // Swiper CSS loaded only in AppSlider (was ~global unused CSS)
   css: [],
 
   plugins: [
@@ -94,52 +95,15 @@ export default {
     cssPath: '~/assets/css/tailwind.css',
   },
 
-  build: {
-    // Drop legacy polyfills for old browsers flagged by Lighthouse
-    transpile: [],
-    babel: {
-      presets({ isServer }, [preset, options]) {
-        return [
-          [
-            preset,
-            {
-              ...options,
-              targets: isServer
-                ? { node: 'current' }
-                : { browsers: ['>1%', 'last 2 versions', 'not dead', 'not ie 11'] },
-              corejs: { version: 3, proposals: false },
-            },
-          ],
-        ]
-      },
-    },
-    splitChunks: {
-      layouts: true,
-      pages: true,
-      commons: true,
-    },
-  },
+  build: {},
   render: {
     compressor: { threshold: 0 },
-    http2: {
-      push: true,
-    },
     static: {
-      // Helpful when Nuxt serves /img directly; nginx also sets long cache
       maxAge: 1000 * 60 * 60 * 24 * 30,
     },
   },
   image: {
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1170,
-      xl: 1280,
-      xxl: 1630,
-    },
     quality: 75,
-    format: ['webp'],
   },
   publicRuntimeConfig: {
     smartCaptchaSiteKey: NUXT_ENV_SMARTCAPTCHA_SITE_KEY,

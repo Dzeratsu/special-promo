@@ -27,8 +27,8 @@
               class="mt-1 lg:hidden"
             />
             <div>
-              <p class="text-base font-bold lg:text-2xl">{{ data?.title }}</p>
-              <p class="text-base">{{ data?.description }}</p>
+              <p class="text-base font-bold lg:text-2xl">{{ data.title }}</p>
+              <p class="text-base">{{ data.description }}</p>
             </div>
           </div>
         </article>
