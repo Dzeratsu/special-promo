@@ -13,20 +13,29 @@
         <div
           class="mt-5 flex flex-col items-center md:flex-row sm:justify-center sm:gap-[57px]"
         >
-          <img
-            class="hidden max-w-full sm:block lp:max-w-[320px]"
-            src="/img/special.svg"
-            alt="Pirilax Special"
-            width="414"
-            height="373"
-          />
-          <img
-            src="/img/special_mob.svg"
-            alt="Pirilax Special"
-            width="260"
-            height="234"
-            class="sm:hidden"
-          />
+          <picture class="hidden max-w-full sm:block lp:max-w-[320px]">
+            <source srcset="/img/special.webp" type="image/webp" />
+            <img
+              src="/img/special.jpg"
+              alt="Pirilax Special"
+              width="414"
+              height="373"
+              class="max-w-full"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <picture class="sm:hidden">
+            <source srcset="/img/special_mob.webp" type="image/webp" />
+            <img
+              src="/img/special_mob.jpg"
+              alt="Pirilax Special"
+              width="260"
+              height="234"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
           <div class="mt-[21px]">
             <div v-for="(item, index) in text" :key="index" class="">
               <ApproveImage>{{ item }}</ApproveImage>

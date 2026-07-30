@@ -33,15 +33,18 @@
               </li>
             </ul>
           </div>
-          <nuxt-img
-            format="webp"
-            quality="100"
-            class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
-            src="img/ready2.png"
-            width="570"
-            height="428"
-            alt="Защита древесины от огня для наружных работ"
-          />
+          <picture>
+            <source srcset="/img/ready2.webp" type="image/webp" />
+            <img
+              class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
+              src="/img/ready2.jpg"
+              width="570"
+              height="428"
+              alt="Комплекс для внутренних работ"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
         <div class="max-sm:mt-[36px] sm:w-6/12">
           <div class="flex items-center sm:items-center">
@@ -71,15 +74,18 @@
               </li>
             </ul>
           </div>
-          <nuxt-img
-            format="webp"
-            quality="100"
-            class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
-            src="img/ready1.png"
-            width="570"
-            height="428"
-            alt="#"
-          />
+          <picture>
+            <source srcset="/img/ready1.webp" type="image/webp" />
+            <img
+              class="mt-[46px] lp:mt-[16px] lp:max-w-[80%]"
+              src="/img/ready1.jpg"
+              width="570"
+              height="428"
+              alt="Комплекс для наружных работ"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
       </div>
     </div>

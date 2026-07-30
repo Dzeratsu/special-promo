@@ -14,18 +14,21 @@
     >
       <li
         v-for="item in slides"
-        :key="item.imgSrc"
+        :key="item.img"
         class="flex flex-col items-center"
       >
-        <nuxt-img
-          format="webp"
-          :alt="`Применение Pirilax Special — ${item.alt}`"
-          class="lp:max-w-[70%]"
-          quality="100"
-          :src="item.imgSrc"
-          width="370"
-          height="255"
-        />
+        <picture>
+          <source :srcset="`/img/slide/${item.img}.webp`" type="image/webp" />
+          <img
+            :src="`/img/slide/${item.img}.jpg`"
+            :alt="`Применение Pirilax Special — ${item.alt}`"
+            class="lp:max-w-[70%]"
+            width="370"
+            height="255"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
         <span class="mt-[14px] text-center text-[14px]">
           <template v-for="(line, i) in item.lines">
             <br v-if="i > 0" :key="'br-' + i" />
@@ -38,15 +41,20 @@
       <ul class="swiper-wrapper mt-4">
         <li
           v-for="item in slides"
-          :key="'m-' + item.imgSrc"
+          :key="'m-' + item.img"
           class="swiper-slide flex flex-col items-center text-center"
         >
-          <nuxt-img
-            format="webp"
-            :alt="`Применение Pirilax Special — ${item.alt}`"
-            quality="100"
-            :src="item.imgSrc"
-          />
+          <picture>
+            <source :srcset="`/img/slide/${item.img}.webp`" type="image/webp" />
+            <img
+              :src="`/img/slide/${item.img}.jpg`"
+              :alt="`Применение Pirilax Special — ${item.alt}`"
+              width="370"
+              height="255"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
           <span class="mt-[12px] text-center">
             <template v-for="(line, i) in item.lines">
               <br v-if="i > 0" :key="'mbr-' + i" />
@@ -62,6 +70,9 @@
 </template>
 
 <script>
+import 'swiper/swiper.min.css'
+import 'swiper/modules/navigation/navigation.min.css'
+
 export default {
   name: 'AppSlider',
   data() {
@@ -69,35 +80,32 @@ export default {
       swiperInstance: null,
       slides: [
         {
-          imgSrc: 'img/slide/slide1.png',
+          img: 'slide1',
           alt: 'Фасады, подшивы',
           lines: ['Фасады, подшивы'],
         },
         {
-          imgSrc: 'img/slide/slide2.png',
+          img: 'slide2',
           alt: 'Надворные постройки',
           lines: ['Надворные постройки'],
         },
         {
-          imgSrc: 'img/slide/slide3.png',
+          img: 'slide3',
           alt: 'Террасы, двери, окна',
           lines: ['Террасы (кроме пола), двери, окна'],
         },
         {
-          imgSrc: 'img/slide/slide4.png',
+          img: 'slide4',
           alt: 'Потолки, стены',
           lines: ['Потолки, стены'],
         },
         {
-          imgSrc: 'img/slide/slide5.png',
+          img: 'slide5',
           alt: 'Элементы декоративной отделки',
-          lines: [
-            'Элементы декоративной отделки,',
-            'предметы интерьера',
-          ],
+          lines: ['Элементы декоративной отделки,', 'предметы интерьера'],
         },
         {
-          imgSrc: 'img/slide/slide6.png',
+          img: 'slide6',
           alt: 'Полы и лестницы',
           lines: [
             'Полы и лестницы',
@@ -149,7 +157,7 @@ export default {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 .swiper-button-next {

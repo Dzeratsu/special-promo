@@ -214,6 +214,33 @@ export default {
     }
   },
   methods: {
+    loadSmartCaptchaScript() {
+      return new Promise((resolve, reject) => {
+        if (process.server) {
+          resolve(null)
+          return
+        }
+        if (window.smartCaptcha) {
+          resolve(window.smartCaptcha)
+          return
+        }
+        const existing = document.querySelector('script[data-smartcaptcha]')
+        if (existing) {
+          existing.addEventListener('load', () => resolve(window.smartCaptcha))
+          existing.addEventListener('error', () =>
+            reject(new Error('SmartCaptcha script failed'))
+          )
+          return
+        }
+        const script = document.createElement('script')
+        script.src = 'https://smartcaptcha.cloud.yandex.ru/captcha.js'
+        script.defer = true
+        script.dataset.smartcaptcha = '1'
+        script.onload = () => resolve(window.smartCaptcha)
+        script.onerror = () => reject(new Error('SmartCaptcha script failed'))
+        document.head.appendChild(script)
+      })
+    },
     waitForSmartCaptcha() {
       return new Promise((resolve, reject) => {
         if (process.server) {
@@ -237,10 +264,14 @@ export default {
     },
     async initSmartCaptcha() {
       try {
+        await this.loadSmartCaptchaScript()
         const smartCaptcha = await this.waitForSmartCaptcha()
         if (!smartCaptcha) return
 
-        const sitekey = process.env.NUXT_ENV_SMARTCAPTCHA_SITE_KEY || process.env.SMARTCAPTCHA_SITE_KEY
+        const sitekey =
+          this.$config.smartCaptchaSiteKey ||
+          process.env.NUXT_ENV_SMARTCAPTCHA_SITE_KEY ||
+          process.env.SMARTCAPTCHA_SITE_KEY
         if (!sitekey) {
           this.captchaError = 'Не задан ключ SmartCaptcha'
           return
